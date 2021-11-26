@@ -19,10 +19,10 @@ public class UIDialogueTextBoxController : MonoBehaviour, DialogueNodeVisitor
     [SerializeField]
     private RectTransform m_ChoicesBoxTransform;
     [SerializeField]
-    private UIDialogueChoiceController m_ChoiceControllerPrefab;
+    public  UIDialogueChoiceController m_ChoiceControllerPrefab;
 
     [SerializeField]
-    private DialogueChannel m_DialogueChannel;
+    public DialogueChannel m_DialogueChannel;
 
     [SerializeField]
     public UnityEvent m_OnInteraction;
@@ -68,7 +68,21 @@ public class UIDialogueTextBoxController : MonoBehaviour, DialogueNodeVisitor
         newMessage.textObject = newText.GetComponent<Text>();
         m_SpeakerText.name = node.DialogueLine.Speaker.CharacterName;
         newMessage.textObject.text = m_SpeakerText.name + ": " + node.DialogueLine.Text;
-        //newMessage.textObject.color = GameObject.FindGameObjectsWithTag("Contacto")[0].GetComponent<Image>().color;
+
+        string name = transform.name;
+
+        switch (name)
+        {
+            case "ChatPanelJuan":
+                newMessage.textObject.color = GameObject.FindObjectOfType<ChatBoxManager>().MessageTypeColor(Message.MessageType.contact1);
+                break;
+            case "ChatPanelLaura":
+                newMessage.textObject.color = GameObject.FindObjectOfType<ChatBoxManager>().MessageTypeColor(Message.MessageType.contact2);
+                break;
+            default:
+                newMessage.textObject.color = Color.white;
+                break;
+        }
 
         node.Accept(this);
     }

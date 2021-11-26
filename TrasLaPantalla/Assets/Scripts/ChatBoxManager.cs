@@ -14,7 +14,7 @@ public class ChatBoxManager : MonoBehaviour
     public GameObject textObject;
     public InputField[] chatBoxInputs;
 
-    public Color playerMessage, info;
+    public Color playerMessage, contact1, contact2;
 
     [SerializeField]
     public GameObject[] ChatContactPanels;
@@ -29,6 +29,10 @@ public class ChatBoxManager : MonoBehaviour
         {
             if (chatBox.name == ChatContactPanels[i].name)
             {
+                if (chatBox.GetComponent<UIDialogueTextBoxController>().m_DialogueChannel.name == "DialogueChannel 1")
+                    chatBox.GetComponent<UIDialogueTextBoxController>().m_ChoiceControllerPrefab.gameObject.SetActive(true);
+                else
+                    chatBox.GetComponent<UIDialogueTextBoxController>().m_ChoiceControllerPrefab.gameObject.SetActive(false);
                 chatBox.SetActive(true);
 
                 //------ INICIO DE LA CONVERSACION EN EL CHAT ------ //
@@ -40,7 +44,9 @@ public class ChatBoxManager : MonoBehaviour
                 indice = i;
             }
             else
+            {
                 ChatContactPanels[i].SetActive(false);
+            }
         }
     }
 
@@ -74,14 +80,20 @@ public class ChatBoxManager : MonoBehaviour
         ChatContactPanels[indice].transform.GetComponent<UIDialogueTextBoxController>().NextSimpleNode();
     }
 
-    Color MessageTypeColor(Message.MessageType messageType)
+    public Color MessageTypeColor(Message.MessageType messageType)
     {
-        Color color = info;
+        Color color = contact1;
 
         switch (messageType)
         {
             case Message.MessageType.playerMessage:
                 color = playerMessage;
+                break;
+            case Message.MessageType.contact1:
+                color = contact1;
+                break;
+            case Message.MessageType.contact2:
+                color = contact2;
                 break;
         }
 
@@ -99,6 +111,7 @@ public class Message
     public enum MessageType
     {
         playerMessage, 
-        info
+        contact1, 
+        contact2
     }
 }
