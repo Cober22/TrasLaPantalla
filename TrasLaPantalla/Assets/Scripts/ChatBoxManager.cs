@@ -9,28 +9,49 @@ public class ChatBoxManager : MonoBehaviour
 
     public int maxMessages = 15;
 
-    public GameObject chatPanel, textObject;
-    public InputField chatBox;
+    [SerializeField]
+    public GameObject[] chatPanel;
+    public GameObject textObject;
+    public InputField[] chatBoxInputs;
 
     public Color playerMessage, info;
 
     [SerializeField]
-    GameObject ChatContactPanels;
+    public GameObject[] ChatContactPanels;
+
+    [SerializeField]
+    public static int indice = 0;
+
+    public void chooseContactIndex(GameObject chatBox)
+    {
+        indice = 0;
+        for (int i = 0; i < chatBoxInputs.Length; i++)
+        {
+            if (chatBox.name == ChatContactPanels[i].name)
+            {
+                chatBox.SetActive(true);
+                indice = i;
+            }
+            else
+                ChatContactPanels[i].SetActive(false);
+        }
+    }
 
     void Update()
     {
-        if(chatBox.text != "")
+        if (chatBoxInputs[indice].text != "")
         {
             if (Input.GetKeyDown(KeyCode.Return))
             {
-                SendMessageToChat(username + ": " + chatBox.text, Message.MessageType.playerMessage);
-                chatBox.text = "";
+                SendMessageToChat(username + ": " + chatBoxInputs[indice].text, Message.MessageType.playerMessage);
+                chatBoxInputs[indice].text = "";
             }
-        } else
+        }
+        else
         {
-            if (!chatBox.isFocused && Input.GetKeyDown(KeyCode.Return))
-                chatBox.ActivateInputField();
-        }       
+            if (!chatBoxInputs[indice].isFocused && Input.GetKeyDown(KeyCode.Return))
+                chatBoxInputs[indice].ActivateInputField();
+        }
     }
 
     public void SendMessageToChat(string text, Message.MessageType messageType)
@@ -38,13 +59,12 @@ public class ChatBoxManager : MonoBehaviour
         Message newMessage = new Message();  
         newMessage.text = text;
 
-        GameObject newText = Instantiate(textObject, chatPanel.transform);
+        GameObject newText = Instantiate(textObject, chatPanel[indice].transform);
         newMessage.textObject = newText.GetComponent<Text>();
         newMessage.textObject.text = newMessage.text;
-        //newMessage.textObject.color = GameObject.FindGameObjectsWithTag("Contacto")[0].GetComponent<Image>().color;
         newMessage.textObject.color = MessageTypeColor(messageType);
 
-        ChatContactPanels.transform.GetComponent<UIDialogueTextBoxController>().NextSimpleNode();
+        ChatContactPanels[indice].transform.GetComponent<UIDialogueTextBoxController>().NextSimpleNode();
     }
 
     Color MessageTypeColor(Message.MessageType messageType)

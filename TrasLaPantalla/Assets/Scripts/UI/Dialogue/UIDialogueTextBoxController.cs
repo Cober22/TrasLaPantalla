@@ -2,6 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
+using System.Collections.Generic;
 
 public class UIDialogueTextBoxController : MonoBehaviour, DialogueNodeVisitor
 {
@@ -24,7 +25,7 @@ public class UIDialogueTextBoxController : MonoBehaviour, DialogueNodeVisitor
     private DialogueChannel m_DialogueChannel;
 
     [SerializeField]
-    UnityEvent m_OnInteraction;
+    public UnityEvent m_OnInteraction;
 
     public void DoInteraction()
     {
@@ -84,13 +85,26 @@ public class UIDialogueTextBoxController : MonoBehaviour, DialogueNodeVisitor
     {
         //m_ChoicesBoxTransform.GetComponent<Image>().enabled = false;
         float escala = 0;
+
+        List<UIDialogueChoiceController> newChoice = new List<UIDialogueChoiceController>();
         foreach (DialogueChoice choice in node.Choices)
         {
-            UIDialogueChoiceController newChoice = Instantiate(m_ChoiceControllerPrefab, transform);
-            newChoice.transform.SetParent(m_ChoiceControllerPrefab.transform);
-            newChoice.transform.position = new Vector3(newChoice.transform.position.x, newChoice.transform.position.y + escala, newChoice.transform.position.z);
-            escala += newChoice.GetComponentInParent<RectTransform>().rect.height;
-            newChoice.Choice = choice;
+            UIDialogueChoiceController aux = Instantiate(m_ChoiceControllerPrefab);
+            newChoice.Add(aux);
+            aux.transform.position = new Vector3(aux.transform.position.x, aux.transform.position.y + escala, aux.transform.position.z);
+            escala += aux.GetComponentInParent<RectTransform>().rect.height;
+            aux.Choice = choice;
         }
+
+        float y = 0;
+        foreach(UIDialogueChoiceController choice in newChoice)
+        {
+            choice.transform.position = new Vector3(m_ChoiceControllerPrefab.transform.position.x,
+                                                    m_ChoiceControllerPrefab.transform.position.y + y,
+                                                    m_ChoiceControllerPrefab.transform.position.z);
+            choice.transform.SetParent(m_ChoiceControllerPrefab.transform);
+            y -= 50f;
+        }
+        m_ChoiceControllerPrefab.gameObject.GetComponent<Image>().enabled = false;
     }
 }   

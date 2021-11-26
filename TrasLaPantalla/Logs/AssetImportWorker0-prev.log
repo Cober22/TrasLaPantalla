@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.19f1 (68f137dc9bbe) revision 6877495'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home Single Language; OS build 19042.1348; Version 2009; 64bit' Language: 'es' Physical Memory: 12168 MB
+OS: 'Windows 10 Pro; OS build 19042.1348; Version 2009; 64bit' Language: 'es' Physical Memory: 16190 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
@@ -11,66 +11,265 @@ C:\Program Files\Unity\Hub\Editor\2020.3.19f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-D:/TrasLaPantalla/TrasLaPantalla/TrasLaPantalla
+D:/_Universidad/4o/1er cuatrimestre/Didactica/TrasLaPantalla/TrasLaPantalla
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51707
-Successfully changed project path to: D:/TrasLaPantalla/TrasLaPantalla/TrasLaPantalla
-D:/TrasLaPantalla/TrasLaPantalla/TrasLaPantalla
+59054
+Successfully changed project path to: D:/_Universidad/4o/1er cuatrimestre/Didactica/TrasLaPantalla/TrasLaPantalla
+D:/_Universidad/4o/1er cuatrimestre/Didactica/TrasLaPantalla/TrasLaPantalla
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 423.49 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 46.31 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.19f1 (68f137dc9bbe)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/TrasLaPantalla/TrasLaPantalla/TrasLaPantalla/Assets
+[Subsystems] Discovering subsystems at path D:/_Universidad/4o/1er cuatrimestre/Didactica/TrasLaPantalla/TrasLaPantalla/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce MX150 (ID=0x1d10)
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f91)
     Vendor:   
-    VRAM:     4027 MB
-    Driver:   27.21.14.6280
+    VRAM:     3962 MB
+    Driver:   30.0.14.7111
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56168
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56368
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004302 seconds.
+Registered in 0.001746 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 52.01 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 38.57 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.379 seconds
+- Completed reload, in  0.982 seconds
 Domain Reload Profiling:
-	ReloadAssembly (3380ms)
-		BeginReloadAssembly (100ms)
+	ReloadAssembly (982ms)
+		BeginReloadAssembly (50ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (708ms)
-			LoadAssemblies (96ms)
+		EndReloadAssembly (365ms)
+			LoadAssemblies (47ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (237ms)
+			SetupTypeCache (130ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (42ms)
-			SetupLoadedEditorAssemblies (326ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (147ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (52ms)
-				BeforeProcessingInitializeOnLoad (27ms)
-				ProcessInitializeOnLoadAttributes (107ms)
-				ProcessInitializeOnLoadMethodAttributes (135ms)
+				RefreshPlugins (39ms)
+				BeforeProcessingInitializeOnLoad (15ms)
+				ProcessInitializeOnLoadAttributes (67ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.127943 seconds.
+Registered in 0.002021 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 40.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.010 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1010ms)
+		BeginReloadAssembly (129ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (827ms)
+			LoadAssemblies (78ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (255ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (337ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (41ms)
+				BeforeProcessingInitializeOnLoad (79ms)
+				ProcessInitializeOnLoadAttributes (196ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.43 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2267 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 101.4 MB.
+System memory in use after: 101.6 MB.
+
+Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 2708.
+Total: 3.181400 ms (FindLiveObjects: 0.224500 ms CreateObjectMapping: 0.079500 ms MarkObjects: 2.817700 ms  DeleteObjects: 0.058800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-TITULO-SIN-FONDO.png
+  artifactKey: Guid(977d10db00d4e8b4ca2ff83f7265cb60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-TITULO-SIN-FONDO.png using Guid(977d10db00d4e8b4ca2ff83f7265cb60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5e3b8b5523d816faf1e2348c40e36e8') in 0.092989 seconds 
+  Import took 0.096396 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000336 seconds.
+  path: Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-CUADRO-ESCRITURA-FONDO.png
+  artifactKey: Guid(e8a39141a945577459ac8c1afa986443) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-CUADRO-ESCRITURA-FONDO.png using Guid(e8a39141a945577459ac8c1afa986443) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '377342d489ff6011887ddcc4816226eb') in 0.021405 seconds 
+  Import took 0.024726 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/Prefabs/Sprites/LETTERGRAM
+  artifactKey: Guid(39130f09e940c474591e50870d7000b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/LETTERGRAM using Guid(39130f09e940c474591e50870d7000b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbb643429436635bfe99cfcb34e59fd2') in 0.004876 seconds 
+  Import took 0.008145 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000341 seconds.
+  path: Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-TITULO.png
+  artifactKey: Guid(e2e2894a44c76d446821886a604c3642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-TITULO.png using Guid(e2e2894a44c76d446821886a604c3642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a0767a50fd54b9909ff5f9243f49f1e') in 0.022415 seconds 
+  Import took 0.025818 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000341 seconds.
+  path: Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-DIALOGO-FONDO.png
+  artifactKey: Guid(29318330c0172ca40aa0bd456ba253f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-DIALOGO-FONDO.png using Guid(29318330c0172ca40aa0bd456ba253f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6558e5afc7087d599b36f4549258ff0f') in 0.017736 seconds 
+  Import took 0.021320 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-BURBUJA.png
+  artifactKey: Guid(0182e064986e51c4c8c4e3c4e71c493c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-BURBUJA.png using Guid(0182e064986e51c4c8c4e3c4e71c493c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc34a3b8aa8f35838449c0bf505d0cbe') in 0.019734 seconds 
+  Import took 0.023686 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-PANEL-BURBUJAS.png
+  artifactKey: Guid(c80f8b325817d43478f25b44402f217f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-PANEL-BURBUJAS.png using Guid(c80f8b325817d43478f25b44402f217f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aef9b0e666d07ab24fc440ff7cf1035a') in 0.021054 seconds 
+  Import took 0.023950 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/Prefabs/Sprites/ESCRITORIO
+  artifactKey: Guid(b8c229319a0140843b0251283e430cc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/ESCRITORIO using Guid(b8c229319a0140843b0251283e430cc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa10448cf7f45cd201113a81216384dc') in 0.005711 seconds 
+  Import took 0.008824 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/Prefabs/Sprites/LETTERGRAM/0 LETTERGRAM-SCREEN FINAL.png
+  artifactKey: Guid(4c241f3aed8fd074fb5d13c6e05e73b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/LETTERGRAM/0 LETTERGRAM-SCREEN FINAL.png using Guid(4c241f3aed8fd074fb5d13c6e05e73b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caaad0587306d0997adbcc3c332f543e') in 0.018121 seconds 
+  Import took 0.021111 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-DIALOGO-CONTRAPARTE.png
+  artifactKey: Guid(c7f0cf28fd4a4fd4bb07dbd815c5ba45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-DIALOGO-CONTRAPARTE.png using Guid(c7f0cf28fd4a4fd4bb07dbd815c5ba45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eb30afb90de07a70ea7649b960f6d87') in 0.014181 seconds 
+  Import took 0.017152 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-LOGO.png
+  artifactKey: Guid(4f3e07d58d45c914eaf51a5c5429c53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-LOGO.png using Guid(4f3e07d58d45c914eaf51a5c5429c53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '187b3f4ce8fca53dff3a7153c734d6a9') in 0.015209 seconds 
+  Import took 0.018434 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-CUADRO-ESCRITURA.png
+  artifactKey: Guid(ef850da788b181f4d85d5ad18a81fa43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-CUADRO-ESCRITURA.png using Guid(ef850da788b181f4d85d5ad18a81fa43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '911d5d3b313b0bee10839c87538fe095') in 0.013354 seconds 
+  Import took 0.016469 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-BARRA-CHATS.png
+  artifactKey: Guid(add16d749d1435b41ab92b85b9208ab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-BARRA-CHATS.png using Guid(add16d749d1435b41ab92b85b9208ab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d701585f21a2a43d479a8f88f906d66') in 0.017252 seconds 
+  Import took 0.020541 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-CAJA-DE-ESCRITURA.png
+  artifactKey: Guid(39e04fdb626e6a046bdad4235be2ce8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-CAJA-DE-ESCRITURA.png using Guid(39e04fdb626e6a046bdad4235be2ce8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fd10ef6f1988611514736946140e0a5') in 0.013311 seconds 
+  Import took 0.016734 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-BOTON-ENVIAR.png
+  artifactKey: Guid(3a6c147715f2a134fb9a4ef456b4e4d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-BOTON-ENVIAR.png using Guid(3a6c147715f2a134fb9a4ef456b4e4d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77b2f86d580ab1a1ed8982a8a0f6fd89') in 0.014347 seconds 
+  Import took 0.017512 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-TITULO-FONDO.png
+  artifactKey: Guid(474742f20b157d546b4ec77e97557f65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-TITULO-FONDO.png using Guid(474742f20b157d546b4ec77e97557f65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f2bc755bdd8fd8663bd5fb108f966ee') in 0.016599 seconds 
+  Import took 0.019751 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-DIALOGO-PROTA.png
+  artifactKey: Guid(2fcaf221555a44e45bb1afb3c257d3fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-DIALOGO-PROTA.png using Guid(2fcaf221555a44e45bb1afb3c257d3fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0baa4dcc6892513028bb1d975260b7c1') in 0.013682 seconds 
+  Import took 0.016609 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-ENVIAR-IMAGEN.png
+  artifactKey: Guid(62ecd4a591e239e40abc2d5d67dba12a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-ENVIAR-IMAGEN.png using Guid(62ecd4a591e239e40abc2d5d67dba12a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5ef7688a01162e603022f3a36176624') in 0.012868 seconds 
+  Import took 0.016095 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

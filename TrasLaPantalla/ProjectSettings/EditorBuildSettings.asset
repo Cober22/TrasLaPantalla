@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/DialogueZoo.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Escritorio.unity
+    guid: f4ec0b349f8603a46af37bf634919cc4
+  - enabled: 1
+    path: Assets/Scenes/LETTERGRAM.unity
+    guid: 3c1ed18e0c3152f4f8fab8e6adc19ac9
+  - enabled: 1
+    path: Assets/Scenes/MAIWER.unity
+    guid: ddcc9e99e9033c742a23787bd57f5920
+  - enabled: 1
+    path: Assets/Scenes/WHOSAPP.unity
+    guid: 36e071e56c9593240a32d0366aa393bb
   m_configObjects: {}
