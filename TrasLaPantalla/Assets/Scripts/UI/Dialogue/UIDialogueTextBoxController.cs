@@ -27,6 +27,8 @@ public class UIDialogueTextBoxController : MonoBehaviour, DialogueNodeVisitor
     [SerializeField]
     public UnityEvent m_OnInteraction;
 
+    public bool chatInit = false;
+
     public void DoInteraction()
     {
         m_OnInteraction.Invoke();
@@ -42,7 +44,7 @@ public class UIDialogueTextBoxController : MonoBehaviour, DialogueNodeVisitor
         //gameObject.SetActive(false);
         //m_ChoicesBoxTransform.gameObject.SetActive(false);
 
-        DoInteraction();
+        //DoInteraction();
     }
 
     public void NextSimpleNode()

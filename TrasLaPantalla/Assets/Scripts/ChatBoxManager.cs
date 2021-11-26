@@ -30,6 +30,13 @@ public class ChatBoxManager : MonoBehaviour
             if (chatBox.name == ChatContactPanels[i].name)
             {
                 chatBox.SetActive(true);
+
+                //------ INICIO DE LA CONVERSACION EN EL CHAT ------ //
+                if (!chatBox.GetComponent<UIDialogueTextBoxController>().chatInit)
+                {
+                    chatBox.GetComponent<UIDialogueTextBoxController>().DoInteraction();
+                    chatBox.GetComponent<UIDialogueTextBoxController>().chatInit = true;
+                }
                 indice = i;
             }
             else
