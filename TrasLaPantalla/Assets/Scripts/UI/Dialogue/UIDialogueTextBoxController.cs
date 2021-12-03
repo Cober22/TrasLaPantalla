@@ -73,10 +73,10 @@ public class UIDialogueTextBoxController : MonoBehaviour, DialogueNodeVisitor
 
         switch (name)
         {
-            case "ChatPanelJuan":
+            case "ChatPanelPadre":
                 newMessage.textObject.color = GameObject.FindObjectOfType<ChatBoxManager>().MessageTypeColor(Message.MessageType.contact1);
                 break;
-            case "ChatPanelLaura":
+            case "ChatPanelMadre":
                 newMessage.textObject.color = GameObject.FindObjectOfType<ChatBoxManager>().MessageTypeColor(Message.MessageType.contact2);
                 break;
             default:

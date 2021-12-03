@@ -95,6 +95,9 @@ public class ChatBoxManager : MonoBehaviour
             case Message.MessageType.contact2:
                 color = contact2;
                 break;
+            default:
+                color = Color.black;
+                break;
         }
 
         return color;
