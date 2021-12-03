@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbd2c1887a808da4b8f0a6cec8d8b890, type: 3}
   m_Name: NarrationLine_Dialogue1_1
   m_EditorClassIdentifier: 
-  m_Speaker: {fileID: 11400000, guid: 9dd3082631238414f8db3e72be080f21, type: 2}
-  m_Text: Hello World!
+  m_Speaker: {fileID: 11400000, guid: 2b65e176fcc166e40abf7f7fa88fff59, type: 2}
+  m_Text: Buenas hijo!!

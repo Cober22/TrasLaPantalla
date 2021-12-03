@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_DialogueLine: {fileID: 11400000, guid: 1b721f09a1dd97645859fbbd42b5b5ab, type: 2}
   m_Choices:
-  - m_ChoicePreview: Number 1
+  - m_ChoicePreview: La switch
     m_ChoiceNode: {fileID: 11400000, guid: 4d145510f1870944fa2b815f3cdeeb53, type: 2}
-  - m_ChoicePreview: Number 2
+  - m_ChoicePreview: La playStation 5
     m_ChoiceNode: {fileID: 11400000, guid: c99374d4d00eeb64db976d7d262cb1b6, type: 2}

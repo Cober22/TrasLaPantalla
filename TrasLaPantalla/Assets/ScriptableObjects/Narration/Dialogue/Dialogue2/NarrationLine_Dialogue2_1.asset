@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbd2c1887a808da4b8f0a6cec8d8b890, type: 3}
   m_Name: NarrationLine_Dialogue2_1
   m_EditorClassIdentifier: 
-  m_Speaker: {fileID: 11400000, guid: f3e8b9ff5442d904a98d7a76ce18e83b, type: 2}
-  m_Text: What do you choose ?
+  m_Speaker: {fileID: 11400000, guid: c8887fa0f7942f843a173fca083c254a, type: 2}
+  m_Text: Que tal hijo. Que consola quieres que te compre

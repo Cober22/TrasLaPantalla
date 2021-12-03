@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.19f1 (68f137dc9bbe) revision 6877495'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home Single Language; OS build 19042.1348; Version 2009; 64bit' Language: 'es' Physical Memory: 12168 MB
+OS: 'Windows 10 Pro; OS build 19042.1348; Version 2009; 64bit' Language: 'es' Physical Memory: 16190 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
@@ -11,139 +11,113 @@ C:\Program Files\Unity\Hub\Editor\2020.3.19f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-D:/TrasLaPantalla/TrasLaPantalla/TrasLaPantalla
+D:/_Universidad/4o/1er cuatrimestre/Didactica/TrasLaPantalla/TrasLaPantalla
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-52890
-Successfully changed project path to: D:/TrasLaPantalla/TrasLaPantalla/TrasLaPantalla
-D:/TrasLaPantalla/TrasLaPantalla/TrasLaPantalla
+58988
+Successfully changed project path to: D:/_Universidad/4o/1er cuatrimestre/Didactica/TrasLaPantalla/TrasLaPantalla
+D:/_Universidad/4o/1er cuatrimestre/Didactica/TrasLaPantalla/TrasLaPantalla
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 52.07 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 43.03 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.19f1 (68f137dc9bbe)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/TrasLaPantalla/TrasLaPantalla/TrasLaPantalla/Assets
+[Subsystems] Discovering subsystems at path D:/_Universidad/4o/1er cuatrimestre/Didactica/TrasLaPantalla/TrasLaPantalla/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce MX150 (ID=0x1d10)
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f91)
     Vendor:   
-    VRAM:     4027 MB
-    Driver:   27.21.14.6280
+    VRAM:     3962 MB
+    Driver:   30.0.14.7111
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56132
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56824
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002792 seconds.
+Registered in 0.001791 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 53.44 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 39.28 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.455 seconds
+- Completed reload, in  1.006 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1455ms)
-		BeginReloadAssembly (90ms)
+	ReloadAssembly (1006ms)
+		BeginReloadAssembly (47ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (2ms)
-		EndReloadAssembly (524ms)
-			LoadAssemblies (86ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (389ms)
+			LoadAssemblies (45ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (177ms)
+			SetupTypeCache (137ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (214ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (153ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (54ms)
-				BeforeProcessingInitializeOnLoad (22ms)
-				ProcessInitializeOnLoadAttributes (100ms)
-				ProcessInitializeOnLoadMethodAttributes (33ms)
+				RefreshPlugins (39ms)
+				BeforeProcessingInitializeOnLoad (15ms)
+				ProcessInitializeOnLoadAttributes (71ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003252 seconds.
+Registered in 0.001972 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-0000018260BD7B40 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182643A6010 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018260FC7990 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182607FFCA0 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182607FFCA0 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018265DFA030 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018260F8D010 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018260FC7990 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001826508C030 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018265194BB0 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018264C0A020 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182645CD010 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018260FB4020 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 56.48 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 39.78 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.342 seconds
+- Completed reload, in  1.018 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1343ms)
-		BeginReloadAssembly (166ms)
+	ReloadAssembly (1019ms)
+		BeginReloadAssembly (133ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (20ms)
-		EndReloadAssembly (1101ms)
-			LoadAssemblies (107ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (830ms)
+			LoadAssemblies (80ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (345ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (59ms)
-			SetupLoadedEditorAssemblies (445ms)
+			SetupTypeCache (272ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (322ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (57ms)
-				BeforeProcessingInitializeOnLoad (93ms)
-				ProcessInitializeOnLoadAttributes (262ms)
-				ProcessInitializeOnLoadMethodAttributes (19ms)
-				AfterProcessingInitializeOnLoad (10ms)
+				RefreshPlugins (40ms)
+				BeforeProcessingInitializeOnLoad (70ms)
+				ProcessInitializeOnLoadAttributes (191ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.21 seconds
-Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.43 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2268 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 100.8 MB.
-System memory in use after: 101.0 MB.
+System memory in use before: 101.4 MB.
+System memory in use after: 101.6 MB.
 
 Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 2709.
-Total: 3.747900 ms (FindLiveObjects: 0.356400 ms CreateObjectMapping: 0.236400 ms MarkObjects: 3.022000 ms  DeleteObjects: 0.131900 ms)
+Total: 3.159400 ms (FindLiveObjects: 0.203800 ms CreateObjectMapping: 0.072500 ms MarkObjects: 2.824200 ms  DeleteObjects: 0.058100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -157,1028 +131,600 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+  path: Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-TITULO-SIN-FONDO.png
+  artifactKey: Guid(977d10db00d4e8b4ca2ff83f7265cb60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-TITULO-SIN-FONDO.png using Guid(977d10db00d4e8b4ca2ff83f7265cb60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5e3b8b5523d816faf1e2348c40e36e8') in 0.121302 seconds 
+  Import took 0.124460 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-CUADRO-ESCRITURA-FONDO.png
+  artifactKey: Guid(e8a39141a945577459ac8c1afa986443) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-CUADRO-ESCRITURA-FONDO.png using Guid(e8a39141a945577459ac8c1afa986443) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '377342d489ff6011887ddcc4816226eb') in 0.016431 seconds 
+  Import took 0.019465 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/Prefabs/Sprites/LETTERGRAM
+  artifactKey: Guid(39130f09e940c474591e50870d7000b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/LETTERGRAM using Guid(39130f09e940c474591e50870d7000b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbb643429436635bfe99cfcb34e59fd2') in 0.004744 seconds 
+  Import took 0.008426 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-TITULO.png
+  artifactKey: Guid(e2e2894a44c76d446821886a604c3642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-TITULO.png using Guid(e2e2894a44c76d446821886a604c3642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a0767a50fd54b9909ff5f9243f49f1e') in 0.015298 seconds 
+  Import took 0.019752 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-DIALOGO-FONDO.png
+  artifactKey: Guid(29318330c0172ca40aa0bd456ba253f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-DIALOGO-FONDO.png using Guid(29318330c0172ca40aa0bd456ba253f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6558e5afc7087d599b36f4549258ff0f') in 0.030837 seconds 
+  Import took 0.034054 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-BURBUJA.png
+  artifactKey: Guid(0182e064986e51c4c8c4e3c4e71c493c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-BURBUJA.png using Guid(0182e064986e51c4c8c4e3c4e71c493c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc34a3b8aa8f35838449c0bf505d0cbe') in 0.015542 seconds 
+  Import took 0.018610 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
   path: Assets/Prefabs/Sprites/ESCRITORIO/MIAWER-LOGO.png
   artifactKey: Guid(7e77912754d15d64887f206382aaf0a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Sprites/ESCRITORIO/MIAWER-LOGO.png using Guid(7e77912754d15d64887f206382aaf0a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd680c55569f64fadd361847d3752319b') in 0.297189 seconds 
-  Import took 0.301502 seconds .
+Start importing Assets/Prefabs/Sprites/ESCRITORIO/MIAWER-LOGO.png using Guid(7e77912754d15d64887f206382aaf0a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfd97d07c6cf08e7c5f3b82a73b96e56') in 0.013447 seconds 
+  Import took 0.016847 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000421 seconds.
+  Time since last request: 0.000266 seconds.
   path: Assets/Prefabs/Sprites/ESCRITORIO
   artifactKey: Guid(b8c229319a0140843b0251283e430cc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Sprites/ESCRITORIO using Guid(b8c229319a0140843b0251283e430cc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cba8658d1a1935a649680c3cca60abcf') in 0.013725 seconds 
-  Import took 0.018982 seconds .
+Start importing Assets/Prefabs/Sprites/ESCRITORIO using Guid(b8c229319a0140843b0251283e430cc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa10448cf7f45cd201113a81216384dc') in 0.004655 seconds 
+  Import took 0.008116 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000657 seconds.
-  path: Assets/Prefabs/Sprites/ESCRITORIO/WHOSAPP-LOGO.png
-  artifactKey: Guid(53755e75e1c0fab49a169dc90f05a28b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Sprites/ESCRITORIO/WHOSAPP-LOGO.png using Guid(53755e75e1c0fab49a169dc90f05a28b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '543617306211c7749ede7ffefba868f9') in 0.042123 seconds 
-  Import took 0.049179 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000402 seconds.
-  path: Assets/Prefabs/Sprites/ESCRITORIO/ESCRITORIO-FONDO-COLOR.png
-  artifactKey: Guid(272ffb48b61cbd44b87cb4107aa45c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Sprites/ESCRITORIO/ESCRITORIO-FONDO-COLOR.png using Guid(272ffb48b61cbd44b87cb4107aa45c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32246b2620b005b730da6baf6fe57a16') in 0.039118 seconds 
-  Import took 0.045064 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000289 seconds.
-  path: Assets/Prefabs
-  artifactKey: Guid(76ccfa00944f1944e85062b8f2a7c620) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs using Guid(76ccfa00944f1944e85062b8f2a7c620) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d654070b223a26a935e0f919dd299b0') in 0.009359 seconds 
-  Import took 0.014545 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000285 seconds.
-  path: Assets/Prefabs/Sprites/ESCRITORIO/ESCRITORIO.png
-  artifactKey: Guid(41752a73fa4383c4990e54df947cf22e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Sprites/ESCRITORIO/ESCRITORIO.png using Guid(41752a73fa4383c4990e54df947cf22e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1b6f5ebbe080b6aaaad51e36fcc620e') in 0.021037 seconds 
-  Import took 0.028405 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000364 seconds.
-  path: Assets/Prefabs/Sprites
-  artifactKey: Guid(1512a29e091fe1b44a5abcbb8f8b38e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Sprites using Guid(1512a29e091fe1b44a5abcbb8f8b38e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30211bd532efade9a07b9505a367064f') in 0.009914 seconds 
-  Import took 0.016755 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000345 seconds.
-  path: Assets/Prefabs/Sprites/ESCRITORIO/LETTERGRAM-LOGO.png
-  artifactKey: Guid(0d4be13917bd9c4458f453f3a6bc150d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Sprites/ESCRITORIO/LETTERGRAM-LOGO.png using Guid(0d4be13917bd9c4458f453f3a6bc150d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6086eb16669b5bca9fb23b1c855dc6e4') in 0.026863 seconds 
-  Import took 0.033537 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000322 seconds.
-  path: Assets/Prefabs/Sprites/ESCRITORIO/ESCRITORIO-FONDO-DIBUJO.png
-  artifactKey: Guid(b1c15625c7fb6ae4a979dc8dde37f113) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Sprites/ESCRITORIO/ESCRITORIO-FONDO-DIBUJO.png using Guid(b1c15625c7fb6ae4a979dc8dde37f113) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3870b1c3c4e7b345afafd269bff6f353') in 0.062284 seconds 
-  Import took 0.066897 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000245 seconds.
-  path: Assets/Prefabs/Text.prefab
-  artifactKey: Guid(68d1a2503df2a75489b824dbb34683e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Text.prefab using Guid(68d1a2503df2a75489b824dbb34683e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd183fc222434f45116d7d1c35e1efce4') in 0.043201 seconds 
-  Import took 0.070680 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002885 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-00000182753816C0 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018260B4C010 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001826798FA10 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018265D5A010 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182605692F0 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018260F8D010 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182690FD5B0 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182656D3ED0 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018260A07EB0 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182656D3ED0 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182687C4040 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018264310080 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018260AC47A0 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.383 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1383ms)
-		BeginReloadAssembly (153ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (42ms)
-		EndReloadAssembly (1149ms)
-			LoadAssemblies (113ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (347ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (57ms)
-			SetupLoadedEditorAssemblies (473ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (108ms)
-				ProcessInitializeOnLoadAttributes (333ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (16ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (18ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.78 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2243 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 102.0 MB.
-System memory in use after: 102.3 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2728.
-Total: 4.459200 ms (FindLiveObjects: 0.264400 ms CreateObjectMapping: 0.163300 ms MarkObjects: 4.004400 ms  DeleteObjects: 0.025700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003804 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0000018260B59820 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001826A213020 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001826798FA10 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182680F9020 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001826A213020 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018260F8D010 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018268896020 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001826798FA10 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018269E6B780 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018268BA9000 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182691C0990 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018260A07EB0 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182680F9020 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.305 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1306ms)
-		BeginReloadAssembly (151ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (43ms)
-		EndReloadAssembly (1082ms)
-			LoadAssemblies (111ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (338ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (53ms)
-			SetupLoadedEditorAssemblies (428ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (94ms)
-				ProcessInitializeOnLoadAttributes (306ms)
-				ProcessInitializeOnLoadMethodAttributes (7ms)
-				AfterProcessingInitializeOnLoad (13ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (17ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2243 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 102.1 MB.
-System memory in use after: 102.3 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2731.
-Total: 4.027200 ms (FindLiveObjects: 0.267400 ms CreateObjectMapping: 0.117900 ms MarkObjects: 3.609300 ms  DeleteObjects: 0.031100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002916 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0000018264A1C840 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018260B4C010 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018260882020 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182605692F0 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018260B4C010 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018260F8D010 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018268636040 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018260882020 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001826508C030 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182606D5010 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182680C2010 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018265BC9040 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182605692F0 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.81 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.322 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1322ms)
-		BeginReloadAssembly (138ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (37ms)
-		EndReloadAssembly (1100ms)
-			LoadAssemblies (113ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (361ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (51ms)
-			SetupLoadedEditorAssemblies (426ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (99ms)
-				ProcessInitializeOnLoadAttributes (300ms)
-				ProcessInitializeOnLoadMethodAttributes (7ms)
-				AfterProcessingInitializeOnLoad (12ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (18ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2243 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 102.1 MB.
-System memory in use after: 102.3 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2734.
-Total: 6.547500 ms (FindLiveObjects: 0.290300 ms CreateObjectMapping: 0.097700 ms MarkObjects: 6.119600 ms  DeleteObjects: 0.037400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003121 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001826A178E40 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001826846B010 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018265F52030 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018269141420 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018264CB2010 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018260F8D010 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018268896020 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001826DF6DDC0 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018269E6B780 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018267F20CC0 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182691C0990 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001826A2B7FA0 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018269141420 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.93 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.360 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1361ms)
-		BeginReloadAssembly (140ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (37ms)
-		EndReloadAssembly (1135ms)
-			LoadAssemblies (120ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (374ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (56ms)
-			SetupLoadedEditorAssemblies (424ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (98ms)
-				ProcessInitializeOnLoadAttributes (294ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (13ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (15ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2243 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 102.1 MB.
-System memory in use after: 102.3 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2737.
-Total: 3.638000 ms (FindLiveObjects: 0.288200 ms CreateObjectMapping: 0.119000 ms MarkObjects: 3.204100 ms  DeleteObjects: 0.025400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003489 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0000018260E55040 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001826E3EE030 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018265B04020 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018269141420 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182645ED030 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018260F8D010 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018268896020 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018265B04020 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018260A8ED90 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018269E34710 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182691C0990 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018267D0C460 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018264F2BA30 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.87 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.365 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1365ms)
-		BeginReloadAssembly (144ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (47ms)
-		EndReloadAssembly (1143ms)
-			LoadAssemblies (120ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (348ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (58ms)
-			SetupLoadedEditorAssemblies (462ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (104ms)
-				ProcessInitializeOnLoadAttributes (323ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (16ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (15ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.66 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2243 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 102.0 MB.
-System memory in use after: 102.3 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2740.
-Total: 6.694600 ms (FindLiveObjects: 0.296100 ms CreateObjectMapping: 0.119400 ms MarkObjects: 6.232300 ms  DeleteObjects: 0.045400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002748 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0000018264CBBE40 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182645DD020 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018260882020 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182645DD020 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182645DD020 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018260F8D010 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018268896020 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018260882020 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018260A8ED90 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182684F1010 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182691C0990 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001826F17E010 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018264F2BA30 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.334 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1334ms)
-		BeginReloadAssembly (152ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (39ms)
-		EndReloadAssembly (1106ms)
-			LoadAssemblies (119ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (343ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (60ms)
-			SetupLoadedEditorAssemblies (441ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (107ms)
-				ProcessInitializeOnLoadAttributes (300ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (15ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (15ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.12 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2243 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 102.2 MB.
-System memory in use after: 102.4 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2743.
-Total: 3.371100 ms (FindLiveObjects: 0.245600 ms CreateObjectMapping: 0.117700 ms MarkObjects: 2.982300 ms  DeleteObjects: 0.024200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003174 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001826A684170 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018267A1C410 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018260882020 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001826DA6E030 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018267A1C410 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018260F8D010 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018268896020 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018260882020 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018260A8ED90 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182606D5010 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182691C0990 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018267E9DFF0 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001826DA6E030 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.367 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1368ms)
-		BeginReloadAssembly (153ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (42ms)
-		EndReloadAssembly (1134ms)
-			LoadAssemblies (119ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (363ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (53ms)
-			SetupLoadedEditorAssemblies (434ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (95ms)
-				ProcessInitializeOnLoadAttributes (308ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (14ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (16ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2243 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 102.2 MB.
-System memory in use after: 102.4 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2746.
-Total: 3.709600 ms (FindLiveObjects: 0.251100 ms CreateObjectMapping: 0.110300 ms MarkObjects: 3.305300 ms  DeleteObjects: 0.041500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003430 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001826A801B00 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182690CF3A0 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018260882020 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182690CF3A0 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182690CF3A0 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018260F8D010 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018268896020 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018260882020 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018260A8ED90 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182606D5010 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182691C0990 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001826FBB7830 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018266282030 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.324 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1324ms)
-		BeginReloadAssembly (145ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (39ms)
-		EndReloadAssembly (1103ms)
-			LoadAssemblies (115ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (353ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (58ms)
-			SetupLoadedEditorAssemblies (452ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (121ms)
-				ProcessInitializeOnLoadAttributes (297ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (18ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (16ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.17 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2243 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 102.2 MB.
-System memory in use after: 102.4 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2749.
-Total: 6.555300 ms (FindLiveObjects: 0.512100 ms CreateObjectMapping: 0.240100 ms MarkObjects: 5.768700 ms  DeleteObjects: 0.032500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003144 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-00000182753816C0 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001826662A010 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182666870A0 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001826950D690 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001826A12F020 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018260F8D010 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182679200A0 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018269491970 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018266253020 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182606D5010 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018265BEB020 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001826FC2DF90 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018269F4DFE0 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.311 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1312ms)
-		BeginReloadAssembly (137ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (38ms)
-		EndReloadAssembly (1099ms)
-			LoadAssemblies (122ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (355ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (53ms)
-			SetupLoadedEditorAssemblies (424ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (101ms)
-				ProcessInitializeOnLoadAttributes (292ms)
-				ProcessInitializeOnLoadMethodAttributes (7ms)
-				AfterProcessingInitializeOnLoad (17ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (18ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.70 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2243 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 102.2 MB.
-System memory in use after: 102.4 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2752.
-Total: 5.949900 ms (FindLiveObjects: 0.452900 ms CreateObjectMapping: 0.159500 ms MarkObjects: 5.310700 ms  DeleteObjects: 0.024800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 920.344920 seconds.
-  path: Assets/Prefabs/Sprites/WHOSAPP
-  artifactKey: Guid(758a9cf53a3f7844eaf5d14adb78c3a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Sprites/WHOSAPP using Guid(758a9cf53a3f7844eaf5d14adb78c3a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd793ddc058a0ae7746acc9ade6b916ef') in 0.014924 seconds 
-  Import took 0.343475 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.417078 seconds.
-  path: Assets/Prefabs/Sprites/WHOSAPP/0 WHOSAPP-SCREEN.png
-  artifactKey: Guid(15859f64e11207948ba995b411feefc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Sprites/WHOSAPP/0 WHOSAPP-SCREEN.png using Guid(15859f64e11207948ba995b411feefc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1c17848c209a150c986df029dfbe000') in 0.058637 seconds 
-  Import took 0.062990 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000301 seconds.
-  path: Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-DIALOGO-FONDO.png
-  artifactKey: Guid(fd95cc2fb735beb41acea202f2a43b37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-DIALOGO-FONDO.png using Guid(fd95cc2fb735beb41acea202f2a43b37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65437b9c3a7d7468da43706f8b93b35d') in 0.070738 seconds 
-  Import took 0.074393 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000323 seconds.
-  path: Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-DIALOGO-CONTRAPARTE.png
-  artifactKey: Guid(039d8b815391990448dbb71655e6452b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-DIALOGO-CONTRAPARTE.png using Guid(039d8b815391990448dbb71655e6452b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e43cdbd46e5a04f058700b2f529d0dc8') in 0.021346 seconds 
-  Import took 0.045238 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000362 seconds.
-  path: Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-TITULO.png
-  artifactKey: Guid(a8c4ddac12b30494291d232e3b4911ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-TITULO.png using Guid(a8c4ddac12b30494291d232e3b4911ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e385b38f9dad1232d2dabb0d4df32270') in 0.026694 seconds 
-  Import took 0.040948 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000299 seconds.
-  path: Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-BURBUJA.png
-  artifactKey: Guid(117eabee6668d8441bb6f4b113df2e46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-BURBUJA.png using Guid(117eabee6668d8441bb6f4b113df2e46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1720f9cd93ab40003f6845173cae3db8') in 0.026009 seconds 
-  Import took 0.030430 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000389 seconds.
-  path: Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-CAJA-DE-ESCRITURA.png
-  artifactKey: Guid(042a27549cc868840b1229f97d57afe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-CAJA-DE-ESCRITURA.png using Guid(042a27549cc868840b1229f97d57afe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9c109a89f919e72bb14aefb5026fc56') in 0.062409 seconds 
-  Import took 0.067126 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000349 seconds.
-  path: Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-CUADRO-ESCRITURA-FONDO.png
-  artifactKey: Guid(559813e054b6da744bff7149a401506e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-CUADRO-ESCRITURA-FONDO.png using Guid(559813e054b6da744bff7149a401506e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7950221d961869ce4324839f35133754') in 0.023575 seconds 
-  Import took 0.040217 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000386 seconds.
-  path: Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-CUADRO-ESCRITURA.png
-  artifactKey: Guid(1c9aa2a34da3e3d4ca574025972550b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-CUADRO-ESCRITURA.png using Guid(1c9aa2a34da3e3d4ca574025972550b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95c16dd78cb5ee24cb790da3a9f8ccdf') in 0.018237 seconds 
-  Import took 0.032121 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000347 seconds.
-  path: Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-TITULO-SIN-FONDO.png
-  artifactKey: Guid(b1edf12890ab292428b7d7b11d26f449) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-TITULO-SIN-FONDO.png using Guid(b1edf12890ab292428b7d7b11d26f449) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4c6f486f07491ab73a3d25aeb870687') in 0.020995 seconds 
-  Import took 0.035285 seconds .
+  Time since last request: 0.000224 seconds.
+  path: Assets/Prefabs/Sprites/LETTERGRAM/0 LETTERGRAM-SCREEN FINAL.png
+  artifactKey: Guid(4c241f3aed8fd074fb5d13c6e05e73b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/LETTERGRAM/0 LETTERGRAM-SCREEN FINAL.png using Guid(4c241f3aed8fd074fb5d13c6e05e73b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caaad0587306d0997adbcc3c332f543e') in 0.017579 seconds 
+  Import took 0.020882 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000276 seconds.
+  path: Assets/Prefabs/Sprites/ESCRITORIO/WHOSAPP-LOGO.png
+  artifactKey: Guid(53755e75e1c0fab49a169dc90f05a28b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/ESCRITORIO/WHOSAPP-LOGO.png using Guid(53755e75e1c0fab49a169dc90f05a28b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c34b433542e7f05a1d2cadd270ac0a8') in 0.017040 seconds 
+  Import took 0.020137 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Prefabs/Sprites/ESCRITORIO/ESCRITORIO-FONDO-COLOR.png
+  artifactKey: Guid(272ffb48b61cbd44b87cb4107aa45c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/ESCRITORIO/ESCRITORIO-FONDO-COLOR.png using Guid(272ffb48b61cbd44b87cb4107aa45c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1a1dccfbabf12cf4d91acb3fde63004') in 0.014688 seconds 
+  Import took 0.018571 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-DIALOGO-CONTRAPARTE.png
+  artifactKey: Guid(c7f0cf28fd4a4fd4bb07dbd815c5ba45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-DIALOGO-CONTRAPARTE.png using Guid(c7f0cf28fd4a4fd4bb07dbd815c5ba45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eb30afb90de07a70ea7649b960f6d87') in 0.013928 seconds 
+  Import took 0.018855 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-PANEL-BURBUJAS.png
+  artifactKey: Guid(c80f8b325817d43478f25b44402f217f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-PANEL-BURBUJAS.png using Guid(c80f8b325817d43478f25b44402f217f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aef9b0e666d07ab24fc440ff7cf1035a') in 0.022505 seconds 
+  Import took 0.025551 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-LOGO.png
+  artifactKey: Guid(4f3e07d58d45c914eaf51a5c5429c53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-LOGO.png using Guid(4f3e07d58d45c914eaf51a5c5429c53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '187b3f4ce8fca53dff3a7153c734d6a9') in 0.013714 seconds 
+  Import took 0.016998 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-CUADRO-ESCRITURA.png
+  artifactKey: Guid(ef850da788b181f4d85d5ad18a81fa43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-CUADRO-ESCRITURA.png using Guid(ef850da788b181f4d85d5ad18a81fa43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '911d5d3b313b0bee10839c87538fe095') in 0.017115 seconds 
+  Import took 0.020832 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000355 seconds.
+  path: Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-BARRA-CHATS.png
+  artifactKey: Guid(add16d749d1435b41ab92b85b9208ab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-BARRA-CHATS.png using Guid(add16d749d1435b41ab92b85b9208ab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d701585f21a2a43d479a8f88f906d66') in 0.013189 seconds 
+  Import took 0.016903 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-CAJA-DE-ESCRITURA.png
+  artifactKey: Guid(39e04fdb626e6a046bdad4235be2ce8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-CAJA-DE-ESCRITURA.png using Guid(39e04fdb626e6a046bdad4235be2ce8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fd10ef6f1988611514736946140e0a5') in 0.026875 seconds 
+  Import took 0.029904 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Prefabs/Sprites/ESCRITORIO/ESCRITORIO.png
+  artifactKey: Guid(41752a73fa4383c4990e54df947cf22e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/ESCRITORIO/ESCRITORIO.png using Guid(41752a73fa4383c4990e54df947cf22e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce36140592a53662c0cd4ee66d4e3d5e') in 0.014816 seconds 
+  Import took 0.018488 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-BOTON-ENVIAR.png
+  artifactKey: Guid(3a6c147715f2a134fb9a4ef456b4e4d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-BOTON-ENVIAR.png using Guid(3a6c147715f2a134fb9a4ef456b4e4d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77b2f86d580ab1a1ed8982a8a0f6fd89') in 0.013974 seconds 
+  Import took 0.017719 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/Prefabs/Sprites/ESCRITORIO/LETTERGRAM-LOGO.png
+  artifactKey: Guid(0d4be13917bd9c4458f453f3a6bc150d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/ESCRITORIO/LETTERGRAM-LOGO.png using Guid(0d4be13917bd9c4458f453f3a6bc150d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4309c3be2dc4531d2d89d0d81c4efbe') in 0.011596 seconds 
+  Import took 0.015294 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/Prefabs/Sprites/ESCRITORIO/ESCRITORIO-FONDO-DIBUJO.png
+  artifactKey: Guid(b1c15625c7fb6ae4a979dc8dde37f113) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/ESCRITORIO/ESCRITORIO-FONDO-DIBUJO.png using Guid(b1c15625c7fb6ae4a979dc8dde37f113) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5952a35f0f7f6a51931d3e85fca35b08') in 0.028826 seconds 
+  Import took 0.032117 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-TITULO-FONDO.png
+  artifactKey: Guid(474742f20b157d546b4ec77e97557f65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-TITULO-FONDO.png using Guid(474742f20b157d546b4ec77e97557f65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f2bc755bdd8fd8663bd5fb108f966ee') in 0.011029 seconds 
+  Import took 0.014207 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-DIALOGO-PROTA.png
+  artifactKey: Guid(2fcaf221555a44e45bb1afb3c257d3fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-DIALOGO-PROTA.png using Guid(2fcaf221555a44e45bb1afb3c257d3fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0baa4dcc6892513028bb1d975260b7c1') in 0.017695 seconds 
+  Import took 0.020951 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-ENVIAR-IMAGEN.png
+  artifactKey: Guid(62ecd4a591e239e40abc2d5d67dba12a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/LETTERGRAM/LETTERGRAM-ENVIAR-IMAGEN.png using Guid(62ecd4a591e239e40abc2d5d67dba12a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5ef7688a01162e603022f3a36176624') in 0.012545 seconds 
+  Import took 0.015795 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.088946 seconds.
+  path: Assets/Prefabs/Sprites/MIAWER
+  artifactKey: Guid(1a3c6561b0df0944f95860b351744af9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/MIAWER using Guid(1a3c6561b0df0944f95860b351744af9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '862fad747077b069dc3497f88b4eb6fe') in 0.005875 seconds 
+  Import took 0.009166 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.096257 seconds.
+  path: Assets/Prefabs/Sprites/MIAWER/0 MIAWER-SCREEN-FINAL.png
+  artifactKey: Guid(cb3024887c6989e45b3b49e83a08d677) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/MIAWER/0 MIAWER-SCREEN-FINAL.png using Guid(cb3024887c6989e45b3b49e83a08d677) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '852a60135f317c17ac0285fe30982a04') in 0.014256 seconds 
+  Import took 0.017639 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Prefabs/Sprites/MIAWER/MIAWER-TITULO-FONDO.png
+  artifactKey: Guid(495804eb0bf0d3240a06ff116acb5053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/MIAWER/MIAWER-TITULO-FONDO.png using Guid(495804eb0bf0d3240a06ff116acb5053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9cee890ddacde0c82564d51799f4f7c') in 0.019567 seconds 
+  Import took 0.023314 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Prefabs/Sprites/MIAWER/MIAWER-BOTON-ENVIAR.png
+  artifactKey: Guid(7d0875c83bea2e141b0522a092f4605a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/MIAWER/MIAWER-BOTON-ENVIAR.png using Guid(7d0875c83bea2e141b0522a092f4605a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38b5399503b9d1ef6e4d0e51fbbf321a') in 0.018041 seconds 
+  Import took 0.022335 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Prefabs/Sprites/MIAWER/MIAWER-BURBUJA.png
+  artifactKey: Guid(eb7bbaecee77d7c44b73e8403412afed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/MIAWER/MIAWER-BURBUJA.png using Guid(eb7bbaecee77d7c44b73e8403412afed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '457d86baf6dd53efb1c4a15faaf42968') in 0.015086 seconds 
+  Import took 0.018289 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Prefabs/Sprites/MIAWER/MIAWER-CUADRO-ESCRITURA-FONDO.png
+  artifactKey: Guid(0423c6682c7dbbb4d9c8c0be4f80a995) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/MIAWER/MIAWER-CUADRO-ESCRITURA-FONDO.png using Guid(0423c6682c7dbbb4d9c8c0be4f80a995) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe820a490458b95e199d3cd32dc751f8') in 0.016852 seconds 
+  Import took 0.020511 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/Prefabs/Sprites/MIAWER/MIAWER-CUADRO-ESCRITURA.png
+  artifactKey: Guid(e55c5dcd359be5a43a1ae8f5c45ca688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/MIAWER/MIAWER-CUADRO-ESCRITURA.png using Guid(e55c5dcd359be5a43a1ae8f5c45ca688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0a83df0e60e86c06559d5b0fa3c9bef') in 0.024654 seconds 
+  Import took 0.028421 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/Prefabs/Sprites/MIAWER/MIAWER-DIALOGO-PROTA.png
+  artifactKey: Guid(f8ad144f0dfb28c4fb344f04c42d9faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/MIAWER/MIAWER-DIALOGO-PROTA.png using Guid(f8ad144f0dfb28c4fb344f04c42d9faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62ffc0e6f981b0da1b7a2d4401e75cf5') in 0.023247 seconds 
+  Import took 0.026167 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Prefabs/Sprites/MIAWER/MIAWER-LOGO.png
+  artifactKey: Guid(2d4a86f1d4414d945a0eb2934ade0130) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/MIAWER/MIAWER-LOGO.png using Guid(2d4a86f1d4414d945a0eb2934ade0130) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8ead7842e9bd7aafde7ae69ffbf35ca') in 0.017185 seconds 
+  Import took 0.020154 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/Prefabs/Sprites/MIAWER/MIAWER-DIALOGO-FONDO.png
+  artifactKey: Guid(98247908add986c4ebf013f05d09edfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/MIAWER/MIAWER-DIALOGO-FONDO.png using Guid(98247908add986c4ebf013f05d09edfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49bb55802d704139e3c3be1afd713e26') in 0.031299 seconds 
+  Import took 0.034200 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Prefabs/Sprites/MIAWER/MIAWER-TITULO-SIN-FONDO.png
+  artifactKey: Guid(424564ac04192b348828bf77c29a7b6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/MIAWER/MIAWER-TITULO-SIN-FONDO.png using Guid(424564ac04192b348828bf77c29a7b6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cb33b8a590aae0230ca6cbedd27f39f') in 0.014134 seconds 
+  Import took 0.017268 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Prefabs/Sprites/MIAWER/MIAWER-CAJA-DE-ESCRITURA.png
+  artifactKey: Guid(2e7b97e968bc27f4bbb74ce2dfd77f49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/MIAWER/MIAWER-CAJA-DE-ESCRITURA.png using Guid(2e7b97e968bc27f4bbb74ce2dfd77f49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9705d8f2670d6d8760ef0d745dc4fe9') in 0.012091 seconds 
+  Import took 0.015350 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/Prefabs/Sprites/MIAWER/MIAWER-ENVIAR-IMAGEN.png
+  artifactKey: Guid(88021c9e7d8b8cf418ca7d8863639145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/MIAWER/MIAWER-ENVIAR-IMAGEN.png using Guid(88021c9e7d8b8cf418ca7d8863639145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '867da14910e2c86c02253cd9f4c1524e') in 0.022669 seconds 
+  Import took 0.025752 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Prefabs/Sprites/MIAWER/MIAWER-PANEL-BURBUJAS.png
+  artifactKey: Guid(968baa3dbb4300048b42cc59be27cffe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/MIAWER/MIAWER-PANEL-BURBUJAS.png using Guid(968baa3dbb4300048b42cc59be27cffe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99530ca024b49482fb292008c87fbcb0') in 0.023975 seconds 
+  Import took 0.026871 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/Prefabs/Sprites/MIAWER/MIAWER-TITULO.png
+  artifactKey: Guid(72dc672f70180f84b875745be80ac522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/MIAWER/MIAWER-TITULO.png using Guid(72dc672f70180f84b875745be80ac522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec078be71f2f65601715c54fcc5469c3') in 0.016888 seconds 
+  Import took 0.020680 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Prefabs/Sprites/MIAWER/MIAWER-DIALOGO-CONTRAPARTE.png
+  artifactKey: Guid(d9d635f940657a34cb6ca56a317f8d62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/MIAWER/MIAWER-DIALOGO-CONTRAPARTE.png using Guid(d9d635f940657a34cb6ca56a317f8d62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2bd2ab57634249241f8bf5b74bb3cae') in 0.033141 seconds 
+  Import took 0.036369 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Prefabs/Sprites/MIAWER/MIAWER-BARRA-CHATS.png
+  artifactKey: Guid(bfc4daa3a2769374497383753877e748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/MIAWER/MIAWER-BARRA-CHATS.png using Guid(bfc4daa3a2769374497383753877e748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ba3842d074ad2e8b0786930cad302f1') in 0.017843 seconds 
+  Import took 0.020736 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.892956 seconds.
+  path: Assets/Prefabs/Sprites/PERSONAJES
+  artifactKey: Guid(30a49319376acbd488739712e0047da3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/PERSONAJES using Guid(30a49319376acbd488739712e0047da3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa544b34dfe67d23b22d1ef398f7fb72') in 0.004851 seconds 
+  Import took 0.008046 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.115891 seconds.
+  path: Assets/Prefabs/Sprites/PERSONAJES/amigo.png
+  artifactKey: Guid(ca8ee661d585b0a438889ce367a6a8d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/PERSONAJES/amigo.png using Guid(ca8ee661d585b0a438889ce367a6a8d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3774a8469ef5f92dc0ac49a47cb44a92') in 0.015449 seconds 
+  Import took 0.019835 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000364 seconds.
+  path: Assets/Prefabs/Sprites/PERSONAJES/desconocido.png
+  artifactKey: Guid(a645e6eee3bfe4947a7462a5159a0d93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/PERSONAJES/desconocido.png using Guid(a645e6eee3bfe4947a7462a5159a0d93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acf3c9e7e390c079dd5ff0900c856b7a') in 0.022179 seconds 
+  Import took 0.025146 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/Prefabs/Sprites/PERSONAJES/madre.png
+  artifactKey: Guid(c589c1b7f3bff6d4c9dfd376c20b553f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/PERSONAJES/madre.png using Guid(c589c1b7f3bff6d4c9dfd376c20b553f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6625c77053adeed09f356dd3990fcc4f') in 0.021745 seconds 
+  Import took 0.025223 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/Prefabs/Sprites/PERSONAJES/hermana.png
+  artifactKey: Guid(3992b5c5ac576654daaaaf02ceebaa6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/PERSONAJES/hermana.png using Guid(3992b5c5ac576654daaaaf02ceebaa6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9abd4424f3c6c5d47b525ac3d90b1b93') in 0.020893 seconds 
+  Import took 0.023904 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/Prefabs/Sprites/PERSONAJES/protagonista.png
+  artifactKey: Guid(8bec78b491bbfc144b265e3871be5bb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/PERSONAJES/protagonista.png using Guid(8bec78b491bbfc144b265e3871be5bb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cec8f9126c672e7ee00e32b1c29adcd1') in 0.020839 seconds 
+  Import took 0.023887 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.511651 seconds.
+  path: Assets/Prefabs/Sprites/WHOSAPP
+  artifactKey: Guid(758a9cf53a3f7844eaf5d14adb78c3a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/WHOSAPP using Guid(758a9cf53a3f7844eaf5d14adb78c3a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cafd7bdb97cea5008dbd546734d54cc') in 0.006143 seconds 
+  Import took 0.009774 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.090690 seconds.
+  path: Assets/Prefabs/Sprites/WHOSAPP/0 WHOSAPP-SCREEN.png
+  artifactKey: Guid(15859f64e11207948ba995b411feefc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/WHOSAPP/0 WHOSAPP-SCREEN.png using Guid(15859f64e11207948ba995b411feefc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79c159b34518f2ddcc5592884400f02e') in 0.013723 seconds 
+  Import took 0.017095 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-DIALOGO-FONDO.png
+  artifactKey: Guid(fd95cc2fb735beb41acea202f2a43b37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-DIALOGO-FONDO.png using Guid(fd95cc2fb735beb41acea202f2a43b37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a939aaea92a5793d9ae323b6c93c451a') in 0.032661 seconds 
+  Import took 0.035879 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-DIALOGO-CONTRAPARTE.png
+  artifactKey: Guid(039d8b815391990448dbb71655e6452b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-DIALOGO-CONTRAPARTE.png using Guid(039d8b815391990448dbb71655e6452b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4207bb0490b5c6bd782f51b3d1bc15f3') in 0.016442 seconds 
+  Import took 0.020208 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-TITULO.png
+  artifactKey: Guid(a8c4ddac12b30494291d232e3b4911ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-TITULO.png using Guid(a8c4ddac12b30494291d232e3b4911ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03947438ed01f9b504ffda25ff847994') in 0.018274 seconds 
+  Import took 0.021561 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-BURBUJA.png
+  artifactKey: Guid(117eabee6668d8441bb6f4b113df2e46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-BURBUJA.png using Guid(117eabee6668d8441bb6f4b113df2e46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7826e533cd62e53216063f3f79e84f26') in 0.015431 seconds 
+  Import took 0.019002 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-CAJA-DE-ESCRITURA.png
+  artifactKey: Guid(042a27549cc868840b1229f97d57afe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-CAJA-DE-ESCRITURA.png using Guid(042a27549cc868840b1229f97d57afe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88895a3604a9786f44b490120b0d0625') in 0.016445 seconds 
+  Import took 0.019746 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000340 seconds.
+  path: Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-CUADRO-ESCRITURA-FONDO.png
+  artifactKey: Guid(559813e054b6da744bff7149a401506e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-CUADRO-ESCRITURA-FONDO.png using Guid(559813e054b6da744bff7149a401506e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9867607902ca01ba95878107a2b10f9') in 0.021801 seconds 
+  Import took 0.025084 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-CUADRO-ESCRITURA.png
+  artifactKey: Guid(1c9aa2a34da3e3d4ca574025972550b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-CUADRO-ESCRITURA.png using Guid(1c9aa2a34da3e3d4ca574025972550b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fc513018ca4094f90c1ed2189e3496d') in 0.021066 seconds 
+  Import took 0.024186 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-TITULO-SIN-FONDO.png
+  artifactKey: Guid(b1edf12890ab292428b7d7b11d26f449) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-TITULO-SIN-FONDO.png using Guid(b1edf12890ab292428b7d7b11d26f449) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a753e5f18d3949bb0fdf81b287744d8b') in 0.020484 seconds 
+  Import took 0.023557 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
   path: Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-PANEL-BURBUJAS.png
   artifactKey: Guid(6c2fab374212e434cb742707a12dde10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-PANEL-BURBUJAS.png using Guid(6c2fab374212e434cb742707a12dde10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63d2696e30097cc83091b8153eed06a4') in 0.030018 seconds 
-  Import took 0.050523 seconds .
+Start importing Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-PANEL-BURBUJAS.png using Guid(6c2fab374212e434cb742707a12dde10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '071ab51694f8edc725826026b9562d4d') in 0.027506 seconds 
+  Import took 0.030419 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000348 seconds.
+  Time since last request: 0.000230 seconds.
   path: Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-BOTON-ENVIAR.png
   artifactKey: Guid(0b15591b43dd2eb46be7bb7f0b0bd618) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-BOTON-ENVIAR.png using Guid(0b15591b43dd2eb46be7bb7f0b0bd618) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d96a303e12ff3e83c835202bec923b8') in 0.021017 seconds 
-  Import took 0.025422 seconds .
+Start importing Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-BOTON-ENVIAR.png using Guid(0b15591b43dd2eb46be7bb7f0b0bd618) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '965a2af7ebb3c52c9347fc7050e0d7ff') in 0.019141 seconds 
+  Import took 0.022023 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000349 seconds.
+  Time since last request: 0.000226 seconds.
   path: Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-TITULO-FONDO.png
   artifactKey: Guid(6371dfb845a4bf249b4fd29d822e1be4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-TITULO-FONDO.png using Guid(6371dfb845a4bf249b4fd29d822e1be4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5432b7b80811d6006b8a32d1e992020') in 0.019350 seconds 
-  Import took 0.024336 seconds .
+Start importing Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-TITULO-FONDO.png using Guid(6371dfb845a4bf249b4fd29d822e1be4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30be83d9a59b1d539f6ed76b3d38561e') in 0.015571 seconds 
+  Import took 0.018934 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000496 seconds.
+  Time since last request: 0.000234 seconds.
   path: Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-RECUADRO-NOMBRE-CONTRAPARTE.png
   artifactKey: Guid(ddff3b760da4da944a471e44b7d9cbff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-RECUADRO-NOMBRE-CONTRAPARTE.png using Guid(ddff3b760da4da944a471e44b7d9cbff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cb015d17e8e0cc82f3f0cafff980445') in 0.022230 seconds 
-  Import took 0.035042 seconds .
+Start importing Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-RECUADRO-NOMBRE-CONTRAPARTE.png using Guid(ddff3b760da4da944a471e44b7d9cbff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aeaf0408a2e6c2c7ac9d708fe3b86fc') in 0.015573 seconds 
+  Import took 0.018977 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000523 seconds.
+  Time since last request: 0.000317 seconds.
   path: Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-BARRA-CHATS.png
   artifactKey: Guid(804a6b66ff9f8c74dabf20f0a6fe7603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-BARRA-CHATS.png using Guid(804a6b66ff9f8c74dabf20f0a6fe7603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18a38c03221aa70254c34df9a5aaf992') in 0.023422 seconds 
-  Import took 0.059974 seconds .
+Start importing Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-BARRA-CHATS.png using Guid(804a6b66ff9f8c74dabf20f0a6fe7603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '562bba6c5f231354417bf546367b764f') in 0.019503 seconds 
+  Import took 0.023021 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000929 seconds.
+  Time since last request: 0.000253 seconds.
   path: Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-ENVIAR-IMAGEN.png
   artifactKey: Guid(2d00f96e5f846f84b82b78e0113352b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-ENVIAR-IMAGEN.png using Guid(2d00f96e5f846f84b82b78e0113352b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b23295612927bdedb30a493d0716c991') in 0.032479 seconds 
-  Import took 0.042158 seconds .
+Start importing Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-ENVIAR-IMAGEN.png using Guid(2d00f96e5f846f84b82b78e0113352b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '443ffa42ab508f2a2c304651af35dd24') in 0.020389 seconds 
+  Import took 0.023243 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000362 seconds.
+  Time since last request: 0.000226 seconds.
   path: Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-DIALOGO-PROTA.png
   artifactKey: Guid(86b9db023009b8348b1caf41d0a49c32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-DIALOGO-PROTA.png using Guid(86b9db023009b8348b1caf41d0a49c32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c534eca8fe12d1e15ec5f3f218c99b5') in 0.020157 seconds 
-  Import took 0.025608 seconds .
+Start importing Assets/Prefabs/Sprites/WHOSAPP/WHOSAPP-DIALOGO-PROTA.png using Guid(86b9db023009b8348b1caf41d0a49c32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fddf0552bee4bbe45b414afff9c1061') in 0.013690 seconds 
+  Import took 0.016656 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.982635 seconds.
+  path: Assets/Prefabs/Text.prefab
+  artifactKey: Guid(68d1a2503df2a75489b824dbb34683e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Text.prefab using Guid(68d1a2503df2a75489b824dbb34683e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0d8c77754904f7bfb67f904b7d06a63') in 0.021517 seconds 
+  Import took 0.024976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.044731 seconds.
+  path: Assets/Materials/NPC1.mat
+  artifactKey: Guid(a65dcbdb9a2c5de42b74583b0a65e612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/NPC1.mat using Guid(a65dcbdb9a2c5de42b74583b0a65e612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05fbf774ce303114ee909d9910dbb428') in 0.047103 seconds 
+  Import took 0.051394 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Materials/Player.mat
+  artifactKey: Guid(ce93d45a59415b6479003bd3a36eb457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Player.mat using Guid(ce93d45a59415b6479003bd3a36eb457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '036010f766a75a8f90096ae449f51e15') in 0.011915 seconds 
+  Import took 0.014908 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/Materials/NPC2.mat
+  artifactKey: Guid(9a9a9526a98a06049873b9e385b966de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/NPC2.mat using Guid(9a9a9526a98a06049873b9e385b966de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd726a22804375abdeb3351544071665a') in 0.014096 seconds 
+  Import took 0.017528 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.650199 seconds.
+  path: Assets/Scenes/Escritorio.unity
+  artifactKey: Guid(f4ec0b349f8603a46af37bf634919cc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Escritorio.unity using Guid(f4ec0b349f8603a46af37bf634919cc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b2a7bd2f1d214d69ffcd9537dfc7933') in 0.006538 seconds 
+  Import took 0.009699 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.006366 seconds.
+Registered in 0.002107 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-00000182705CC070 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182680F5010 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018264CBBC40 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018269F4DFE0 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001826A12F020 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001826839F010 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001826E3EE030 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018269491970 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182695F0C80 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182606D5010 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018265BEB020 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018267EE4030 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000018269F4DFE0 doesn't match image D:\TrasLaPantalla\TrasLaPantalla\TrasLaPantalla\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.43 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.199 seconds
+- Completed reload, in  0.903 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1199ms)
-		BeginReloadAssembly (144ms)
+	ReloadAssembly (903ms)
+		BeginReloadAssembly (99ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (42ms)
-		EndReloadAssembly (975ms)
-			LoadAssemblies (122ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (751ms)
+			LoadAssemblies (73ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (329ms)
+			SetupTypeCache (269ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (51ms)
-			SetupLoadedEditorAssemblies (361ms)
+			RebuildScriptCaches (39ms)
+			SetupLoadedEditorAssemblies (274ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (97ms)
-				ProcessInitializeOnLoadAttributes (241ms)
-				ProcessInitializeOnLoadMethodAttributes (6ms)
-				AfterProcessingInitializeOnLoad (9ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (70ms)
+				ProcessInitializeOnLoadAttributes (188ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2243 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 102.1 MB.
-System memory in use after: 102.3 MB.
+System memory in use before: 103.0 MB.
+System memory in use after: 103.2 MB.
 
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2778.
-Total: 3.757000 ms (FindLiveObjects: 0.215100 ms CreateObjectMapping: 0.096500 ms MarkObjects: 3.422300 ms  DeleteObjects: 0.022100 ms)
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2816.
+Total: 2.855300 ms (FindLiveObjects: 0.166700 ms CreateObjectMapping: 0.068200 ms MarkObjects: 2.606300 ms  DeleteObjects: 0.013300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -1190,3 +736,4 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
