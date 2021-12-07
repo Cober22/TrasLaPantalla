@@ -64,11 +64,14 @@ public class UIDialogueTextBoxController : MonoBehaviour, DialogueNodeVisitor
         //gameObject.SetActive(true);
 
         Message newMessage = new Message();
+        Message newMessagePlayer = new Message();
 
         GameObject newText = Instantiate(textObject, chatPanel.transform);
         newMessage.textObject = newText.GetComponent<Text>();
         m_SpeakerText.name = node.DialogueLine.Speaker.CharacterName;
         newMessage.textObject.text = m_SpeakerText.name + ": " + node.DialogueLine.Text;
+
+        FindObjectOfType<ChatBoxManager>().GetComponent<ChatBoxManager>().nextMessage = node.DialogueLine.PlayerText;
 
         string name = transform.name;
 

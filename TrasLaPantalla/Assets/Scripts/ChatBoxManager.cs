@@ -24,6 +24,8 @@ public class ChatBoxManager : MonoBehaviour
     public static int indice = 0;
 
     private bool thisChat;
+    
+    public string nextMessage;
 
     private void Awake()
     {
@@ -84,7 +86,7 @@ public class ChatBoxManager : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Return))
             {
-                SendMessageToChat(username + ": " + chatBoxInputs[indice].text, Message.MessageType.playerMessage);
+                SendMessageToChat(username + ": " + nextMessage, Message.MessageType.playerMessage);
                 chatBoxInputs[indice].text = "";
             }
         }

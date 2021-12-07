@@ -7,7 +7,10 @@ public class NarrationLine : ScriptableObject
     private NarrationCharacter m_Speaker;
     [SerializeField]
     private string m_Text;
+    [SerializeField]
+    private string m_playerAnswer;
 
     public NarrationCharacter Speaker => m_Speaker;
     public string Text => m_Text;
+    public string PlayerText => m_playerAnswer;
 }
