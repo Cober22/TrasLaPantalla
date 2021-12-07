@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ChatBoxManager : MonoBehaviour
 {
@@ -22,6 +23,33 @@ public class ChatBoxManager : MonoBehaviour
     [SerializeField]
     public static int indice = 0;
 
+    private bool thisChat;
+
+    private void Awake()
+    {
+        //switch(SceneManager.GetActiveScene().name)
+        //{
+        //    case "LETTERGRAM": thisChat = DontDestroy.lettergram;
+        //            break;
+        //    case "MAIWER":
+        //        thisChat = DontDestroy.maiwer;
+        //            break;
+        //    case "WHOSAPP":
+        //        thisChat = DontDestroy.whosapp;
+        //            break;
+        //    default:
+        //        thisChat = false;
+        //            break;
+        //}
+
+        if(DontDestroy.hiddenChat)
+        {
+            DontDestroy.hiddenChat = false;
+            FindObjectOfType<DontDestroy>().GetComponent<Transform>().gameObject.SetActive(true);
+            //chatBox[indice].GetComponent<UIDialogueTextBoxController>().chatInit = true;
+        }
+    }
+
     public void chooseContactIndex(GameObject chatBox)
     {
         indice = 0;
@@ -29,10 +57,10 @@ public class ChatBoxManager : MonoBehaviour
         {
             if (chatBox.name == ChatContactPanels[i].name)
             {
-                if (chatBox.GetComponent<UIDialogueTextBoxController>().m_DialogueChannel.name == "DialogueChannel 1")
-                    chatBox.GetComponent<UIDialogueTextBoxController>().m_ChoiceControllerPrefab.gameObject.SetActive(true);
-                else
-                    chatBox.GetComponent<UIDialogueTextBoxController>().m_ChoiceControllerPrefab.gameObject.SetActive(false);
+                //if (chatBox.GetComponent<UIDialogueTextBoxController>().m_DialogueChannel.name == "DialogueChannel 1")
+                //    chatBox.GetComponent<UIDialogueTextBoxController>().m_ChoiceControllerPrefab.gameObject.SetActive(true);
+                //else
+                //    chatBox.GetComponent<UIDialogueTextBoxController>().m_ChoiceControllerPrefab.gameObject.SetActive(false);
                 chatBox.SetActive(true);
 
                 //------ INICIO DE LA CONVERSACION EN EL CHAT ------ //
@@ -64,6 +92,13 @@ public class ChatBoxManager : MonoBehaviour
         {
             if (!chatBoxInputs[indice].isFocused && Input.GetKeyDown(KeyCode.Return))
                 chatBoxInputs[indice].ActivateInputField();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            DontDestroy.hiddenChat = true;
+            FindObjectOfType<DontDestroy>().GetComponent<Transform>().gameObject.SetActive(false);
+            SceneManager.LoadScene("Escritorio");
         }
     }
 

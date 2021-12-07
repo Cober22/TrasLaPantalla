@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/LETTERGRAM.unity
+- path: Assets/Scenes/Escritorio.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

@@ -31,7 +31,8 @@ public class UIDialogueTextBoxController : MonoBehaviour, DialogueNodeVisitor
 
     public void DoInteraction()
     {
-        m_OnInteraction.Invoke();
+        if(!DontDestroy.hiddenChat)
+            m_OnInteraction.Invoke();
     }
 
     private DialogueNode m_NextNode = null;
@@ -106,8 +107,11 @@ public class UIDialogueTextBoxController : MonoBehaviour, DialogueNodeVisitor
         foreach (DialogueChoice choice in node.Choices)
         {
             UIDialogueChoiceController aux = Instantiate(m_ChoiceControllerPrefab);
+            DontDestroyOnLoad(aux);
             newChoice.Add(aux);
             aux.transform.position = new Vector3(aux.transform.position.x, aux.transform.position.y + escala, aux.transform.position.z);
+
+            aux.transform.SetParent(GameObject.Find("DialogueChoiceButton").transform);
             escala += aux.GetComponentInParent<RectTransform>().rect.height;
             aux.Choice = choice;
         }

@@ -325,11 +325,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 189532287}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2099885456}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &266066933
@@ -540,11 +540,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 301397991}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2099885456}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &339279904
@@ -788,7 +788,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: c411e4a0bffbd7f47a3e0e53a7f64f1d, type: 2}
     - target: {fileID: 3365769474238233696, guid: 9182d879243c8d746a71e684f8820a8a, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3365769474238233698, guid: 9182d879243c8d746a71e684f8820a8a, type: 3}
       propertyPath: m_Pivot.x
@@ -880,7 +880,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3365769474238233701, guid: 9182d879243c8d746a71e684f8820a8a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3365769475912324031, guid: 9182d879243c8d746a71e684f8820a8a, type: 3}
       propertyPath: m_fontAsset
@@ -1229,11 +1229,11 @@ MonoBehaviour:
   chatBox: {fileID: 1347941632}
   m_ChoicesBoxTransform: {fileID: 582043329}
   m_ChoiceControllerPrefab: {fileID: 288496376}
-  m_DialogueChannel: {fileID: 11400000, guid: c411e4a0bffbd7f47a3e0e53a7f64f1d, type: 2}
+  m_DialogueChannel: {fileID: 11400000, guid: 027b85a834382df4bae3c6a31df83a99, type: 2}
   m_OnInteraction:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: c411e4a0bffbd7f47a3e0e53a7f64f1d, type: 2}
+      - m_Target: {fileID: 11400000, guid: 027b85a834382df4bae3c6a31df83a99, type: 2}
         m_TargetAssemblyTypeName: DialogueChannel, Assembly-CSharp
         m_MethodName: RaiseRequestDialogue
         m_Mode: 2
@@ -1494,7 +1494,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2099885456}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &971260240
@@ -2348,11 +2348,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1494306987}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2099885456}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1494306989
@@ -2394,7 +2394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c07d05f2c613e434ebff6b126811065c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_DialogueChannel: {fileID: 11400000, guid: 20e76ab5c4289f240b52438dbb95e083, type: 2}
+  m_DialogueChannel: {fileID: 11400000, guid: 491e4d601e78e7745a0a9d32d1801dca, type: 2}
 --- !u!114 &1494306991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2407,7 +2407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c07d05f2c613e434ebff6b126811065c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_DialogueChannel: {fileID: 11400000, guid: c411e4a0bffbd7f47a3e0e53a7f64f1d, type: 2}
+  m_DialogueChannel: {fileID: 11400000, guid: 027b85a834382df4bae3c6a31df83a99, type: 2}
 --- !u!1 &1510962749
 GameObject:
   m_ObjectHideFlags: 0
@@ -2504,7 +2504,7 @@ RectTransform:
   - {fileID: 2106060625}
   - {fileID: 820808528}
   - {fileID: 660990599}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2099885456}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3426,6 +3426,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2068278315}
   m_CullTransparentMesh: 1
+--- !u!1 &2099885455
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2099885456}
+  - component: {fileID: 2099885457}
+  m_Layer: 0
+  m_Name: DontDestroyWhosapp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2099885456
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099885455}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 189532290}
+  - {fileID: 928612255}
+  - {fileID: 1494306988}
+  - {fileID: 1510962753}
+  - {fileID: 301397994}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2099885457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099885455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e38ce881ffc02d44fa0bb4ac5c786e47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2106060624
 GameObject:
   m_ObjectHideFlags: 0
@@ -3555,11 +3603,11 @@ MonoBehaviour:
   chatBox: {fileID: 1360288212}
   m_ChoicesBoxTransform: {fileID: 582043329}
   m_ChoiceControllerPrefab: {fileID: 288496376}
-  m_DialogueChannel: {fileID: 11400000, guid: 20e76ab5c4289f240b52438dbb95e083, type: 2}
+  m_DialogueChannel: {fileID: 11400000, guid: 491e4d601e78e7745a0a9d32d1801dca, type: 2}
   m_OnInteraction:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 20e76ab5c4289f240b52438dbb95e083, type: 2}
+      - m_Target: {fileID: 11400000, guid: 491e4d601e78e7745a0a9d32d1801dca, type: 2}
         m_TargetAssemblyTypeName: DialogueChannel, Assembly-CSharp
         m_MethodName: RaiseRequestDialogue
         m_Mode: 2
