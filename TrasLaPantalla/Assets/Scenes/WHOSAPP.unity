@@ -1224,7 +1224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_SpeakerText: {fileID: 339279904}
-  textObject: {fileID: 4840816105121881877, guid: 68d1a2503df2a75489b824dbb34683e4, type: 3}
+  textObject: {fileID: 8945208024115798441, guid: d842c5bc268f50645871abd6546015b7, type: 3}
   chatPanel: {fileID: 339279904}
   chatBox: {fileID: 1347941632}
   m_ChoicesBoxTransform: {fileID: 582043329}
@@ -2372,7 +2372,7 @@ MonoBehaviour:
   chatPanel:
   - {fileID: 1125738244}
   - {fileID: 339279904}
-  textObject: {fileID: 4840816105121881877, guid: 68d1a2503df2a75489b824dbb34683e4, type: 3}
+  textObject: {fileID: 8945208024115798441, guid: d842c5bc268f50645871abd6546015b7, type: 3}
   chatBoxInputs:
   - {fileID: 1360288212}
   - {fileID: 1347941632}
@@ -2382,6 +2382,7 @@ MonoBehaviour:
   ChatContactPanels:
   - {fileID: 2106060624}
   - {fileID: 820808527}
+  nextMessage: 
 --- !u!114 &1494306990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3598,7 +3599,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_SpeakerText: {fileID: 1125738244}
-  textObject: {fileID: 4840816105121881877, guid: 68d1a2503df2a75489b824dbb34683e4, type: 3}
+  textObject: {fileID: 8945208024115798441, guid: d842c5bc268f50645871abd6546015b7, type: 3}
   chatPanel: {fileID: 1125738244}
   chatBox: {fileID: 1360288212}
   m_ChoicesBoxTransform: {fileID: 582043329}

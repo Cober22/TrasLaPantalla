@@ -12,7 +12,8 @@ public class ChatBoxManager : MonoBehaviour
 
     [SerializeField]
     public GameObject[] chatPanel;
-    public GameObject textObject;
+    public GameObject textObjectContacts;
+    public GameObject textObjectPlayer;
     public InputField[] chatBoxInputs;
 
     public Color playerMessage, contact1, contact2;
@@ -109,8 +110,13 @@ public class ChatBoxManager : MonoBehaviour
         Message newMessage = new Message();  
         newMessage.text = text;
 
-        GameObject newText = Instantiate(textObject, chatPanel[indice].transform);
-        newMessage.textObject = newText.GetComponent<Text>();
+        GameObject newText;
+        if(messageType == Message.MessageType.playerMessage)
+            newText = Instantiate(textObjectPlayer, chatPanel[indice].transform);
+        else
+            newText = Instantiate(textObjectContacts, chatPanel[indice].transform);
+
+        newMessage.textObject = newText.GetComponentInChildren<Text>();
         newMessage.textObject.text = newMessage.text;
         newMessage.textObject.color = MessageTypeColor(messageType);
 

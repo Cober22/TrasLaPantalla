@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 using System.Collections.Generic;
+using System.Text;
 
 public class UIDialogueTextBoxController : MonoBehaviour, DialogueNodeVisitor
 {
@@ -27,7 +28,12 @@ public class UIDialogueTextBoxController : MonoBehaviour, DialogueNodeVisitor
     [SerializeField]
     public UnityEvent m_OnInteraction;
 
+    [SerializeField]
+    public int maxCharactersPerLine = 7;
+
     public bool chatInit = false;
+
+
 
     public void DoInteraction()
     {
@@ -63,18 +69,26 @@ public class UIDialogueTextBoxController : MonoBehaviour, DialogueNodeVisitor
     {
         //gameObject.SetActive(true);
 
+
+        //...... MENSAJES CONTACTO ......//
         Message newMessage = new Message();
-        Message newMessagePlayer = new Message();
 
         GameObject newText = Instantiate(textObject, chatPanel.transform);
-        newMessage.textObject = newText.GetComponent<Text>();
-        m_SpeakerText.name = node.DialogueLine.Speaker.CharacterName;
+        //newText.transform.position = new Vector3(-380f, 
+        //                                                                    newText.transform.position.y,
+        //                                                                    newText.transform.position.z);
+        //Debug.Log(newText.GetComponent<RectTransform>().localPosition.x);
+        //Debug.Log(newText.name);
+        newMessage.textObject = newText.GetComponentInChildren<Text>();
+
         newMessage.textObject.text = m_SpeakerText.name + ": " + node.DialogueLine.Text;
+        newMessage.textObject.text = TextFormat(newMessage.textObject.text);
 
-        FindObjectOfType<ChatBoxManager>().GetComponent<ChatBoxManager>().nextMessage = node.DialogueLine.PlayerText;
+        FindObjectOfType<ChatBoxManager>().GetComponent<ChatBoxManager>().nextMessage = TextFormat(node.DialogueLine.PlayerText);
 
+
+        //...... ASIGNAR COLORES ......//
         string name = transform.name;
-
         switch (name)
         {
             case "ChatPanelPadre":
@@ -84,11 +98,47 @@ public class UIDialogueTextBoxController : MonoBehaviour, DialogueNodeVisitor
                 newMessage.textObject.color = GameObject.FindObjectOfType<ChatBoxManager>().MessageTypeColor(Message.MessageType.contact2);
                 break;
             default:
-                newMessage.textObject.color = Color.white;
+                newMessage.textObject.color = Color.black;
                 break;
         }
 
         node.Accept(this);
+    }
+
+    public string TextFormat(string message)
+    {
+        string mensaje = "";
+
+        // Programar saltos de linea con un límite de carácteres por linea
+        int contador = 0;
+        int mensajeLenght = 0;
+
+        while ((message.Length - mensajeLenght) > maxCharactersPerLine)
+        {
+            while (contador < maxCharactersPerLine)
+            {
+                mensaje += message[mensajeLenght];
+                contador += 1;
+                mensajeLenght += 1;
+            }
+
+            while (message[mensajeLenght - 1] != ' ' && message.Length - 1 > mensajeLenght)
+            {
+                mensaje += message[mensajeLenght];
+                mensajeLenght += 1;
+            }
+
+            contador = 0;
+            mensaje += "\n";
+        }
+
+        while (mensajeLenght < message.Length)
+        {
+            mensaje += message[mensajeLenght];
+            mensajeLenght += 1;
+        }
+
+        return mensaje;
     }
 
     private void OnDialogueNodeEnd(DialogueNode node)

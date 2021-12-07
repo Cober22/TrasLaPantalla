@@ -221,11 +221,11 @@ RectTransform:
   m_Father: {fileID: 1913938154}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0.000061035156, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0}
+  m_Pivot: {x: 1, y: 0}
 --- !u!114 &137265483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,11 +240,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Padding:
     m_Left: 0
-    m_Right: 0
+    m_Right: 40
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 6
-  m_Spacing: 0
+  m_ChildAlignment: 8
+  m_Spacing: 20
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
@@ -264,7 +264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_HorizontalFit: 0
+  m_HorizontalFit: 2
   m_VerticalFit: 2
 --- !u!1 &232972819
 GameObject:
@@ -1152,7 +1152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21960784, g: 0.21960784, b: 0.21960784, a: 1}
+  m_Color: {r: 0.21960784, g: 0.21960784, b: 0.21960784, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1211,8 +1211,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.4999981}
-  m_SizeDelta: {x: -20, y: -13}
+  m_AnchoredPosition: {x: 0, y: -1.7356}
+  m_SizeDelta: {x: -20, y: -15.4711}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &569225737
 MonoBehaviour:
@@ -1227,7 +1227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.52156866, g: 0.9607843, b: 0.5254902, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1241,7 +1241,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 0
     m_HorizontalOverflow: 1
@@ -1357,7 +1357,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21960784, g: 0.21960784, b: 0.21960784, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1559,7 +1559,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 24.026485, y: -40.076508}
-  m_SizeDelta: {x: 587.4964, y: 360.4342}
+  m_SizeDelta: {x: 587.4964, y: 350}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &836412413
 MonoBehaviour:
@@ -1574,7 +1574,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_SpeakerText: {fileID: 137265481}
-  textObject: {fileID: 4840816105121881877, guid: 68d1a2503df2a75489b824dbb34683e4, type: 3}
+  textObject: {fileID: 8945208024115798441, guid: af59b44c74624864b8e30b2b61ec8922, type: 3}
   chatPanel: {fileID: 137265481}
   chatBox: {fileID: 923911229}
   m_ChoicesBoxTransform: {fileID: 1684603795}
@@ -1595,6 +1595,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  maxCharactersPerLine: 20
   chatInit: 0
 --- !u!114 &836412414
 MonoBehaviour:
@@ -1901,16 +1902,18 @@ MonoBehaviour:
   chatPanel:
   - {fileID: 1958396336}
   - {fileID: 137265481}
-  textObject: {fileID: 4840816105121881877, guid: 68d1a2503df2a75489b824dbb34683e4, type: 3}
+  textObjectContacts: {fileID: 8945208024115798441, guid: af59b44c74624864b8e30b2b61ec8922, type: 3}
+  textObjectPlayer: {fileID: 8945208024115798441, guid: d842c5bc268f50645871abd6546015b7, type: 3}
   chatBoxInputs:
   - {fileID: 1135539778}
   - {fileID: 923911229}
-  playerMessage: {r: 0.5210751, g: 0.9622642, b: 0.524662, a: 1}
+  playerMessage: {r: 0, g: 0, b: 0, a: 1}
   contact1: {r: 0.3471698, g: 0.6383266, b: 0.8679245, a: 1}
   contact2: {r: 0.8135105, g: 0.25989673, b: 0.8773585, a: 1}
   ChatContactPanels:
   - {fileID: 1027017330}
   - {fileID: 836412411}
+  nextMessage: 
 --- !u!114 &918197094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2139,7 +2142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_SpeakerText: {fileID: 1958396336}
-  textObject: {fileID: 4840816105121881877, guid: 68d1a2503df2a75489b824dbb34683e4, type: 3}
+  textObject: {fileID: 8945208024115798441, guid: af59b44c74624864b8e30b2b61ec8922, type: 3}
   chatPanel: {fileID: 1958396336}
   chatBox: {fileID: 1135539778}
   m_ChoicesBoxTransform: {fileID: 1684603795}
@@ -2160,6 +2163,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  maxCharactersPerLine: 20
   chatInit: 0
 --- !u!114 &1027017332
 MonoBehaviour:
@@ -2173,7 +2177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Content: {fileID: 1958396337}
+  m_Content: {fileID: 0}
   m_Horizontal: 1
   m_Vertical: 1
   m_MovementType: 2
@@ -2250,7 +2254,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 24.026485, y: -40.076508}
-  m_SizeDelta: {x: 587.4964, y: 360.4342}
+  m_SizeDelta: {x: 587.4964, y: 350}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &1086553002
 GameObject:
@@ -2315,14 +2319,14 @@ RectTransform:
   m_GameObject: {fileID: 1107719797}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.55, y: 0.53, z: 1}
+  m_LocalScale: {x: 2, y: 0.53, z: 1}
   m_Children: []
   m_Father: {fileID: 440816630}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 215, y: -11.7}
+  m_AnchoredPosition: {x: 150, y: -11.7}
   m_SizeDelta: {x: 220, y: 51}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1107719799
@@ -2604,14 +2608,14 @@ RectTransform:
   m_GameObject: {fileID: 1150405073}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.55, y: 0.53, z: 1}
+  m_LocalScale: {x: 2, y: 0.53, z: 1}
   m_Children: []
   m_Father: {fileID: 238813877}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 215, y: -11.7}
+  m_AnchoredPosition: {x: 150, y: -11.7}
   m_SizeDelta: {x: 220, y: 51}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1150405075
@@ -2946,8 +2950,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.4999981}
-  m_SizeDelta: {x: -20, y: -13}
+  m_AnchoredPosition: {x: 0, y: -1.7356}
+  m_SizeDelta: {x: -20, y: -15.4711}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1468961884
 CanvasRenderer:
@@ -2970,7 +2974,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.52156866, g: 0.9607843, b: 0.5254902, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2984,7 +2988,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 0
     m_HorizontalOverflow: 1
@@ -3627,11 +3631,11 @@ RectTransform:
   m_Father: {fileID: 344216652}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0.000030517578, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0}
+  m_Pivot: {x: 1, y: 0}
 --- !u!114 &1958396338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3646,11 +3650,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Padding:
     m_Left: 0
-    m_Right: 0
+    m_Right: 40
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 6
-  m_Spacing: 0
+  m_ChildAlignment: 8
+  m_Spacing: 20
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
@@ -3670,7 +3674,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_HorizontalFit: 0
+  m_HorizontalFit: 2
   m_VerticalFit: 2
 --- !u!1 &2002218197
 GameObject:

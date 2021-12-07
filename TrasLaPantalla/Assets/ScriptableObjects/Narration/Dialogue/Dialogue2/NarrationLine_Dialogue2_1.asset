@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: c8887fa0f7942f843a173fca083c254a, type: 2}
   m_Text: Que tal hijo. Que consola quieres que te compre
+  m_playerAnswer: 
