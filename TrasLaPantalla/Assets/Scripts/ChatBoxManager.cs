@@ -110,11 +110,8 @@ public class ChatBoxManager : MonoBehaviour
         Message newMessage = new Message();  
         newMessage.text = text;
 
-        GameObject newText;
-        if(messageType == Message.MessageType.playerMessage)
-            newText = Instantiate(textObjectPlayer, chatPanel[indice].transform);
-        else
-            newText = Instantiate(textObjectContacts, chatPanel[indice].transform);
+        GameObject newText = Instantiate(textObjectPlayer, chatPanel[indice].transform);
+
 
         newMessage.textObject = newText.GetComponentInChildren<Text>();
         newMessage.textObject.text = newMessage.text;

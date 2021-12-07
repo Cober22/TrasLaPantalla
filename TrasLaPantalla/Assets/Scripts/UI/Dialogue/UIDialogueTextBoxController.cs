@@ -73,18 +73,25 @@ public class UIDialogueTextBoxController : MonoBehaviour, DialogueNodeVisitor
         //...... MENSAJES CONTACTO ......//
         Message newMessage = new Message();
 
+        //Transform trans = chatPanel.transform;
+        //trans.position = new Vector3(-380f, 0, 0f);
+        
         GameObject newText = Instantiate(textObject, chatPanel.transform);
-        //newText.transform.position = new Vector3(-380f, 
-        //                                                                    newText.transform.position.y,
-        //                                                                    newText.transform.position.z);
+        //newText.GetComponent<RectTransform>().rect.position = new Vector3(-380f, 0f, 0f);
+        
+        //newText.transform.position = new Vector3(-380f,
+                                                                            //newText.transform.position.y,
+                                                                            //newText.transform.position.z);
         //Debug.Log(newText.GetComponent<RectTransform>().localPosition.x);
         //Debug.Log(newText.name);
+        
         newMessage.textObject = newText.GetComponentInChildren<Text>();
 
         newMessage.textObject.text = m_SpeakerText.name + ": " + node.DialogueLine.Text;
         newMessage.textObject.text = TextFormat(newMessage.textObject.text);
 
-        FindObjectOfType<ChatBoxManager>().GetComponent<ChatBoxManager>().nextMessage = TextFormat(node.DialogueLine.PlayerText);
+        if(node.DialogueLine.PlayerText != "")
+            FindObjectOfType<ChatBoxManager>().GetComponent<ChatBoxManager>().nextMessage = TextFormat(node.DialogueLine.PlayerText);
 
 
         //...... ASIGNAR COLORES ......//
