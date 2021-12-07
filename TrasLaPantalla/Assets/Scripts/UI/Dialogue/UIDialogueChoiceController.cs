@@ -44,7 +44,7 @@ public class UIDialogueChoiceController : MonoBehaviour
         if(m_Choice.text != "")
         {
             m_Choice.text = FindObjectOfType<UIDialogueTextBoxController>().TextFormat(m_Choice.text);
-            chatBoxManager.SendMessageToChat(username + ": " + m_Choice.text, Message.MessageType.playerMessage);
+            chatBoxManager.SendMessageToChat(/*username + ": " + */ m_Choice.text, Message.MessageType.playerMessage);
             m_DialogueChannel.RaiseRequestDialogueNode(m_ChoiceNextNode);
         }
     }

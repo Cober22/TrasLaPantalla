@@ -72,22 +72,15 @@ public class UIDialogueTextBoxController : MonoBehaviour, DialogueNodeVisitor
 
         //...... MENSAJES CONTACTO ......//
         Message newMessage = new Message();
-
-        //Transform trans = chatPanel.transform;
-        //trans.position = new Vector3(-380f, 0, 0f);
         
         GameObject newText = Instantiate(textObject, chatPanel.transform);
-        //newText.GetComponent<RectTransform>().rect.position = new Vector3(-380f, 0f, 0f);
-        
-        //newText.transform.position = new Vector3(-380f,
-                                                                            //newText.transform.position.y,
-                                                                            //newText.transform.position.z);
-        //Debug.Log(newText.GetComponent<RectTransform>().localPosition.x);
-        //Debug.Log(newText.name);
+        RectTransform pos = newText.GetComponent<RectTransform>();
+        newText.GetComponent<RectTransform>().rect.Set(-380f, pos.rect.y, pos.rect.width, pos.rect.height);
+        //Debug.Log(newText.GetComponent<RectTransform>().rect.x);
         
         newMessage.textObject = newText.GetComponentInChildren<Text>();
 
-        newMessage.textObject.text = m_SpeakerText.name + ": " + node.DialogueLine.Text;
+        newMessage.textObject.text = /*m_SpeakerText.name + ": " + */node.DialogueLine.Text;
         newMessage.textObject.text = TextFormat(newMessage.textObject.text);
 
         if(node.DialogueLine.PlayerText != "")
@@ -129,7 +122,7 @@ public class UIDialogueTextBoxController : MonoBehaviour, DialogueNodeVisitor
                 mensajeLenght += 1;
             }
 
-            while (message[mensajeLenght - 1] != ' ' && message.Length - 1 > mensajeLenght)
+            while (message[mensajeLenght - 1] != ' ' && message.Length > mensajeLenght)
             {
                 mensaje += message[mensajeLenght];
                 mensajeLenght += 1;

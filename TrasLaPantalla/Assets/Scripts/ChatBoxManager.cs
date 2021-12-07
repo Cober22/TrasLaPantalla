@@ -87,7 +87,7 @@ public class ChatBoxManager : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Return))
             {
-                SendMessageToChat(username + ": " + nextMessage, Message.MessageType.playerMessage);
+                SendMessageToChat(/*username + ": " + */nextMessage, Message.MessageType.playerMessage);
                 chatBoxInputs[indice].text = "";
             }
         }
@@ -111,7 +111,6 @@ public class ChatBoxManager : MonoBehaviour
         newMessage.text = text;
 
         GameObject newText = Instantiate(textObjectPlayer, chatPanel[indice].transform);
-
 
         newMessage.textObject = newText.GetComponentInChildren<Text>();
         newMessage.textObject.text = newMessage.text;
