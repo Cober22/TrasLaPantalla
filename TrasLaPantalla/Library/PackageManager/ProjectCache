@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637725667902598160
-    m_Hash: 1281532689
+      ticks: 637745644677745978
+    m_Hash: 1057182873
   m_LockFileStatus:
     m_FilePath: D:/_Universidad/4o/1er cuatrimestre/Didactica/TrasLaPantalla/TrasLaPantalla/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637725668407051659
-    m_Hash: 2635377270
+      ticks: 637745644677745978
+    m_Hash: 2649899152
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:

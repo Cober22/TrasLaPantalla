@@ -85,10 +85,14 @@ public class UIDialogueTextBoxController : MonoBehaviour, DialogueNodeVisitor
             case "MadreChat":
                 if(node.DialogueLine.PlayerText != "")
                     FindObjectOfType<ChatBoxManager>().GetComponent<ChatBoxManager>().nextMessage[0] = TextFormat(node.DialogueLine.PlayerText);
+                if(node.DialogueLine.Scene != "")
+                    ChatBoxManager.sceneName = node.DialogueLine.Scene;
                 break;
             case "PadreChat":
                 if (node.DialogueLine.PlayerText != "")
                     FindObjectOfType<ChatBoxManager>().GetComponent<ChatBoxManager>().nextMessage[1] = TextFormat(node.DialogueLine.PlayerText);
+                if (node.DialogueLine.Scene != "")
+                    ChatBoxManager.sceneName = node.DialogueLine.Scene;
                 break;
         }
 

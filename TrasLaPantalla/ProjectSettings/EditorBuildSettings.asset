@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WHOSAPP.unity
     guid: 36e071e56c9593240a32d0366aa393bb
+  - enabled: 1
+    path: Assets/Scenes/Minjuegos/SliderPuzzle.unity
+    guid: 10aff005658c1fa41a81bfddbbe26853
+  - enabled: 1
+    path: Assets/Scenes/Minjuegos/PasswordGame.unity
+    guid: d1f5529007f90a74da30c768f3d44d27
   m_configObjects: {}

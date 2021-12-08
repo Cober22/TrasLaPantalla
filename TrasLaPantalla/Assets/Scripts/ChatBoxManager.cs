@@ -29,6 +29,7 @@ public class ChatBoxManager : MonoBehaviour
     
     public List<string> nextMessage = new List<string>();
     public string playerNextMessage;
+    public static string sceneName;
 
     public int character;
     public float waitForANewMessage = 1f;
@@ -64,7 +65,7 @@ public class ChatBoxManager : MonoBehaviour
         indice = 0;
         for (int i = 0; i < chatBoxInputs.Length; i++)
         {
-            if (chatBox.name == ChatContactPanels[i].name && anterior != i)
+            if (chatBox.name == ChatContactPanels[i].name)
             {
                 chatBox.SetActive(true);
 
@@ -77,16 +78,16 @@ public class ChatBoxManager : MonoBehaviour
                 indice = i;
                 playerNextMessage = nextMessage[indice];
 
-                if(playerNextMessage == "")
+                if(playerNextMessage == "" && respuesta1.transform.childCount > 0)
                 {
-                    respuesta1.SetActive(true);
-                    respuesta2.SetActive(true);
-                } else
+                    respuesta1.transform.GetChild(0).gameObject.SetActive(true);
+                    respuesta2.transform.GetChild(0).gameObject.SetActive(true);
+                } else if(respuesta1.transform.childCount > 0)
                 {
-                    respuesta1.SetActive(false);
-                    respuesta2.SetActive(false);
+                    respuesta1.transform.GetChild(0).gameObject.SetActive(false);
+                    respuesta2.transform.GetChild(0).gameObject.SetActive(false);
                 }
-                anterior = indice;
+                //anterior = indice;
             }
             else
             {
@@ -109,6 +110,11 @@ public class ChatBoxManager : MonoBehaviour
             {
                 character = 0;
                 SendMessageToChat(/*username + ": " + */playerNextMessage, Message.MessageType.playerMessage);
+                if (sceneName != "")
+                {
+                    FindObjectOfType<DontDestroy>().GetComponent<Transform>().gameObject.SetActive(false);
+                    SceneManager.LoadScene(sceneName);
+                }
                 chatBoxInputs[indice].text = "";
             }
         }

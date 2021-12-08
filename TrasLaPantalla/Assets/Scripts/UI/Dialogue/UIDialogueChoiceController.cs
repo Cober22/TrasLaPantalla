@@ -57,6 +57,7 @@ public class UIDialogueChoiceController : MonoBehaviour
         choices.Add(GameObject.Find("Respuesta2"));
 
         foreach (GameObject choice in choices)
-            Destroy(choice);
+            if(choice.transform.childCount > 0)
+                Destroy(choice.transform.GetChild(0).gameObject);
     }
 }
