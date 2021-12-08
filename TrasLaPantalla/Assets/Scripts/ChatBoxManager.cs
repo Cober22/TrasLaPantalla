@@ -24,7 +24,7 @@ public class ChatBoxManager : MonoBehaviour
 
     [SerializeField]
     public static int indice = 0;
-
+    public static int anterior = 1234;
     private bool thisChat;
     
     public List<string> nextMessage = new List<string>();
@@ -32,6 +32,9 @@ public class ChatBoxManager : MonoBehaviour
 
     public int character;
     public float waitForANewMessage = 1f;
+
+    public GameObject respuesta1;
+    public GameObject respuesta2;
 
     private void Awake()
     {
@@ -41,6 +44,11 @@ public class ChatBoxManager : MonoBehaviour
             i += 1;
         }
 
+        if (respuesta1 == null)
+        {
+            respuesta1 = GameObject.Find("Respuesta1");
+            respuesta2 = GameObject.Find("Respuesta2");
+        }
 
         character = 0;
 
@@ -56,7 +64,7 @@ public class ChatBoxManager : MonoBehaviour
         indice = 0;
         for (int i = 0; i < chatBoxInputs.Length; i++)
         {
-            if (chatBox.name == ChatContactPanels[i].name)
+            if (chatBox.name == ChatContactPanels[i].name && anterior != i)
             {
                 chatBox.SetActive(true);
 
@@ -68,6 +76,17 @@ public class ChatBoxManager : MonoBehaviour
                 }
                 indice = i;
                 playerNextMessage = nextMessage[indice];
+
+                if(playerNextMessage == "")
+                {
+                    respuesta1.SetActive(true);
+                    respuesta2.SetActive(true);
+                } else
+                {
+                    respuesta1.SetActive(false);
+                    respuesta2.SetActive(false);
+                }
+                anterior = indice;
             }
             else
             {
