@@ -27,27 +27,20 @@ public class ChatBoxManager : MonoBehaviour
 
     private bool thisChat;
     
-    public string nextMessage;
+    public List<string> nextMessage = new List<string>();
+    public string playerNextMessage;
 
     public int character;
     public float waitForANewMessage = 1f;
 
     private void Awake()
     {
-        //switch(SceneManager.GetActiveScene().name)
-        //{
-        //    case "LETTERGRAM": thisChat = DontDestroy.lettergram;
-        //            break;
-        //    case "MAIWER":
-        //        thisChat = DontDestroy.maiwer;
-        //            break;
-        //    case "WHOSAPP":
-        //        thisChat = DontDestroy.whosapp;
-        //            break;
-        //    default:
-        //        thisChat = false;
-        //            break;
-        //}
+        int i = 0;
+        while (i < 4) {
+            nextMessage.Add("");
+            i += 1;
+        }
+
 
         character = 0;
 
@@ -55,45 +48,16 @@ public class ChatBoxManager : MonoBehaviour
         {
             DontDestroy.hiddenChat = false;
             FindObjectOfType<DontDestroy>().GetComponent<Transform>().gameObject.SetActive(true);
-            //chatBox[indice].GetComponent<UIDialogueTextBoxController>().chatInit = true;
         }
     }
 
     public void chooseContactIndex(GameObject chatBox)
     {
-
-        GameObject hijos = GameObject.Find("DialogueChoiceButton");
-        if(chatBox.name != ChatContactPanels[indice].name && hijos.transform.childCount > 1)
-        {
-            for (int i = 0; i < hijos.transform.childCount; i++)
-                for (int e = 0; e < hijos.transform.GetChild(i).childCount; e++)
-                    hijos.transform.GetChild(i).GetChild(e).gameObject.SetActive(false);
-        } else if(hijos.transform.childCount > 1)
-        {
-            for (int i = 1; i < hijos.transform.childCount; i++)
-            {
-                for (int e = 0; e < hijos.transform.GetChild(i).childCount; e++)
-                {
-                    hijos.transform.GetChild(i).GetChild(e).gameObject.SetActive(true);
-
-                }
-                hijos.transform.GetChild(i).gameObject.SetActive(true);
-                hijos.transform.GetChild(i).GetComponent<Image>().enabled = true;
-            }
-
-            hijos.transform.GetChild(0).gameObject.SetActive(false);
-            hijos.transform.GetChild(hijos.transform.childCount-1).GetChild(1).gameObject.SetActive(false);
-        }
-        
         indice = 0;
         for (int i = 0; i < chatBoxInputs.Length; i++)
         {
             if (chatBox.name == ChatContactPanels[i].name)
             {
-                //if (chatBox.GetComponent<UIDialogueTextBoxController>().m_DialogueChannel.name == "DialogueChannel 1")
-                //    chatBox.GetComponent<UIDialogueTextBoxController>().m_ChoiceControllerPrefab.gameObject.SetActive(true);
-                //else
-                //    chatBox.GetComponent<UIDialogueTextBoxController>().m_ChoiceControllerPrefab.gameObject.SetActive(false);
                 chatBox.SetActive(true);
 
                 //------ INICIO DE LA CONVERSACION EN EL CHAT ------ //
@@ -103,6 +67,7 @@ public class ChatBoxManager : MonoBehaviour
                     chatBox.GetComponent<UIDialogueTextBoxController>().chatInit = true;
                 }
                 indice = i;
+                playerNextMessage = nextMessage[indice];
             }
             else
             {
@@ -113,18 +78,18 @@ public class ChatBoxManager : MonoBehaviour
 
     void Update()
     {
-        if (character < nextMessage.Length && Input.anyKeyDown && !(Input.GetMouseButtonDown(0)
+        if (playerNextMessage != null && character < playerNextMessage.Length && Input.anyKeyDown && !(Input.GetMouseButtonDown(0)
            || Input.GetMouseButtonDown(1) || Input.GetMouseButtonDown(2)))
         {
-            chatBoxInputs[indice].text += nextMessage[character];
+            chatBoxInputs[indice].text += playerNextMessage[character];
             character += 1;
         }
         if (chatBoxInputs[indice].text != "")
         {
-            if (Input.GetKeyDown(KeyCode.Return) && character  >= nextMessage.Length)
+            if (Input.GetKeyDown(KeyCode.Return) && character  >= playerNextMessage.Length)
             {
                 character = 0;
-                SendMessageToChat(/*username + ": " + */nextMessage, Message.MessageType.playerMessage);
+                SendMessageToChat(/*username + ": " + */playerNextMessage, Message.MessageType.playerMessage);
                 chatBoxInputs[indice].text = "";
             }
         }

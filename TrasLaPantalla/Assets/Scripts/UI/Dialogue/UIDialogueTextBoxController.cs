@@ -67,25 +67,30 @@ public class UIDialogueTextBoxController : MonoBehaviour, DialogueNodeVisitor
 
     public void OnDialogueNodeStart(DialogueNode node)
     {
-        //gameObject.SetActive(true);
-
-
         //...... MENSAJES CONTACTO ......//
         Message newMessage = new Message();
         
         GameObject newText = Instantiate(textObject, chatPanel.transform);
         RectTransform pos = newText.GetComponent<RectTransform>();
         newText.GetComponent<RectTransform>().rect.Set(-380f, pos.rect.y, pos.rect.width, pos.rect.height);
-        //Debug.Log(newText.GetComponent<RectTransform>().rect.x);
         
         newMessage.textObject = newText.GetComponentInChildren<Text>();
 
         newMessage.textObject.text = /*m_SpeakerText.name + ": " + */node.DialogueLine.Text;
         newMessage.textObject.text = TextFormat(newMessage.textObject.text);
-
-        if(node.DialogueLine.PlayerText != "")
-            FindObjectOfType<ChatBoxManager>().GetComponent<ChatBoxManager>().nextMessage = TextFormat(node.DialogueLine.PlayerText);
-
+        
+        Debug.Log(FindObjectOfType<ChatBoxManager>().GetComponent<ChatBoxManager>().nextMessage.Count);
+        switch (m_SpeakerText.name)
+        {
+            case "MadreChat":
+                if(node.DialogueLine.PlayerText != "")
+                    FindObjectOfType<ChatBoxManager>().GetComponent<ChatBoxManager>().nextMessage[0] = TextFormat(node.DialogueLine.PlayerText);
+                break;
+            case "PadreChat":
+                if (node.DialogueLine.PlayerText != "")
+                    FindObjectOfType<ChatBoxManager>().GetComponent<ChatBoxManager>().nextMessage[1] = TextFormat(node.DialogueLine.PlayerText);
+                break;
+        }
 
         //...... ASIGNAR COLORES ......//
         string name = transform.name;
