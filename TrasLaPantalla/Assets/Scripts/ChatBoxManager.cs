@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Text;
 
 public class ChatBoxManager : MonoBehaviour
 {
@@ -28,6 +29,9 @@ public class ChatBoxManager : MonoBehaviour
     
     public string nextMessage;
 
+    public int character;
+    public float waitForANewMessage = 1f;
+
     private void Awake()
     {
         //switch(SceneManager.GetActiveScene().name)
@@ -44,6 +48,8 @@ public class ChatBoxManager : MonoBehaviour
         //        thisChat = false;
         //            break;
         //}
+
+        character = 0;
 
         if(DontDestroy.hiddenChat)
         {
@@ -83,10 +89,17 @@ public class ChatBoxManager : MonoBehaviour
 
     void Update()
     {
+        if (character < nextMessage.Length && Input.anyKeyDown && !(Input.GetMouseButtonDown(0)
+           || Input.GetMouseButtonDown(1) || Input.GetMouseButtonDown(2)))
+        {
+            chatBoxInputs[indice].text += nextMessage[character];
+            character += 1;
+        }
         if (chatBoxInputs[indice].text != "")
         {
-            if (Input.GetKeyDown(KeyCode.Return))
+            if (Input.GetKeyDown(KeyCode.Return) && character  >= nextMessage.Length)
             {
+                character = 0;
                 SendMessageToChat(/*username + ": " + */nextMessage, Message.MessageType.playerMessage);
                 chatBoxInputs[indice].text = "";
             }
@@ -116,8 +129,16 @@ public class ChatBoxManager : MonoBehaviour
         newMessage.textObject.text = newMessage.text;
         newMessage.textObject.color = MessageTypeColor(messageType);
 
+        StartCoroutine(CoroutineNextMessage());
+
+    }
+
+    IEnumerator CoroutineNextMessage() 
+    { 
+        yield return new WaitForSecondsRealtime(waitForANewMessage);
         ChatContactPanels[indice].transform.GetComponent<UIDialogueTextBoxController>().NextSimpleNode();
     }
+
 
     public Color MessageTypeColor(Message.MessageType messageType)
     {
