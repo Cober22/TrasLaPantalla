@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using System.Collections.Generic;
 using UnityEngine.UI;
 
 public class UIDialogueChoiceController : MonoBehaviour
@@ -33,19 +34,29 @@ public class UIDialogueChoiceController : MonoBehaviour
         string username = "";
         int c = 0;
 
+        // Corta el nombre del chat panel en el que hemos clickado
         while (c < chatBoxManager.ChatContactPanels[ChatBoxManager.indice].name.Length)
         {
             if (c > aux.Length - 1)
                 username += chatBoxManager.ChatContactPanels[ChatBoxManager.indice].name[c];
             c++;
         }
-        username = chatBoxManager.username;
+        //username = chatBoxManager.username;
 
         if(m_Choice.text != "")
         {
+            Debug.Log(m_Choice.text);
             m_Choice.text = FindObjectOfType<UIDialogueTextBoxController>().TextFormat(m_Choice.text);
             chatBoxManager.SendMessageToChat(/*username + ": " + */ m_Choice.text, Message.MessageType.playerMessage);
             m_DialogueChannel.RaiseRequestDialogueNode(m_ChoiceNextNode);
         }
+
+        List<GameObject> choices = new List<GameObject>();
+
+        choices.Add(GameObject.Find("Respuesta1"));
+        choices.Add(GameObject.Find("Respuesta2"));
+
+        foreach (GameObject choice in choices)
+            Destroy(choice);
     }
 }

@@ -61,6 +61,30 @@ public class ChatBoxManager : MonoBehaviour
 
     public void chooseContactIndex(GameObject chatBox)
     {
+
+        GameObject hijos = GameObject.Find("DialogueChoiceButton");
+        if(chatBox.name != ChatContactPanels[indice].name && hijos.transform.childCount > 1)
+        {
+            for (int i = 0; i < hijos.transform.childCount; i++)
+                for (int e = 0; e < hijos.transform.GetChild(i).childCount; e++)
+                    hijos.transform.GetChild(i).GetChild(e).gameObject.SetActive(false);
+        } else if(hijos.transform.childCount > 1)
+        {
+            for (int i = 1; i < hijos.transform.childCount; i++)
+            {
+                for (int e = 0; e < hijos.transform.GetChild(i).childCount; e++)
+                {
+                    hijos.transform.GetChild(i).GetChild(e).gameObject.SetActive(true);
+
+                }
+                hijos.transform.GetChild(i).gameObject.SetActive(true);
+                hijos.transform.GetChild(i).GetComponent<Image>().enabled = true;
+            }
+
+            hijos.transform.GetChild(0).gameObject.SetActive(false);
+            hijos.transform.GetChild(hijos.transform.childCount-1).GetChild(1).gameObject.SetActive(false);
+        }
+        
         indice = 0;
         for (int i = 0; i < chatBoxInputs.Length; i++)
         {
@@ -135,8 +159,9 @@ public class ChatBoxManager : MonoBehaviour
 
     IEnumerator CoroutineNextMessage() 
     { 
-        yield return new WaitForSecondsRealtime(waitForANewMessage);
+        //yield return new WaitForSecondsRealtime(waitForANewMessage);
         ChatContactPanels[indice].transform.GetComponent<UIDialogueTextBoxController>().NextSimpleNode();
+        yield return null;
     }
 
 

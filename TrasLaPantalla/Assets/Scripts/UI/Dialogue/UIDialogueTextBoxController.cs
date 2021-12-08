@@ -153,31 +153,17 @@ public class UIDialogueTextBoxController : MonoBehaviour, DialogueNodeVisitor
 
     public void Visit(ChoiceDialogueNode node)
     {
-        //m_ChoicesBoxTransform.GetComponent<Image>().enabled = false;
-        float escala = 0;
-
         List<UIDialogueChoiceController> newChoice = new List<UIDialogueChoiceController>();
+        int i = 1;
         foreach (DialogueChoice choice in node.Choices)
         {
-            UIDialogueChoiceController aux = Instantiate(m_ChoiceControllerPrefab);
+            GameObject holder = GameObject.Find("Respuesta" + i.ToString());
+            i += 1;
+            UIDialogueChoiceController aux = Instantiate(m_ChoiceControllerPrefab, holder.transform);
             DontDestroyOnLoad(aux);
             newChoice.Add(aux);
-            aux.transform.position = new Vector3(aux.transform.position.x, aux.transform.position.y + escala, aux.transform.position.z);
-
-            aux.transform.SetParent(GameObject.Find("DialogueChoiceButton").transform);
-            escala += aux.GetComponentInParent<RectTransform>().rect.height;
             aux.Choice = choice;
         }
-
-        float y = 0;
-        foreach(UIDialogueChoiceController choice in newChoice)
-        {
-            choice.transform.position = new Vector3(m_ChoiceControllerPrefab.transform.position.x,
-                                                    m_ChoiceControllerPrefab.transform.position.y + y,
-                                                    m_ChoiceControllerPrefab.transform.position.z);
-            choice.transform.SetParent(m_ChoiceControllerPrefab.transform);
-            y -= 50f;
-        }
-        m_ChoiceControllerPrefab.gameObject.GetComponent<Image>().enabled = false;
+        //m_ChoiceControllerPrefab.gameObject.GetComponent<Image>().enabled = false;
     }
 }   
