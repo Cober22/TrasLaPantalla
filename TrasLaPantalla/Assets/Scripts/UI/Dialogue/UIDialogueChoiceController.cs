@@ -2,6 +2,7 @@ using TMPro;
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using System.Collections;
 
 public class UIDialogueChoiceController : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class UIDialogueChoiceController : MonoBehaviour
 
     private DialogueNode m_ChoiceNextNode;
     private ChatBoxManager chatBoxManager;
+
+    private float waitForANewMessage = 1f;
 
     public DialogueChoice Choice
     {
@@ -41,21 +44,32 @@ public class UIDialogueChoiceController : MonoBehaviour
                 username += chatBoxManager.ChatContactPanels[ChatBoxManager.indice].name[c];
             c++;
         }
-        //username = chatBoxManager.username;
-        if(m_Choice.text != "")
-        {
-            m_Choice.text = FindObjectOfType<UIDialogueTextBoxController>().TextFormat(m_Choice.text);
-            chatBoxManager.SendMessageToChat(/*username + ": " + */ m_Choice.text, Message.MessageType.playerMessage);
-            m_DialogueChannel.RaiseRequestDialogueNode(m_ChoiceNextNode);
-        }
-
         List<GameObject> choices = new List<GameObject>();
 
         choices.Add(GameObject.Find("Respuesta1"));
         choices.Add(GameObject.Find("Respuesta2"));
 
-        foreach (GameObject choice in choices)
-            if(choice.transform.childCount > 0)
-                Destroy(choice.transform.GetChild(0).gameObject);
+        if(m_Choice.text != "")
+        {
+            Debug.Log(m_Choice.text);
+            m_Choice.text = FindObjectOfType<UIDialogueTextBoxController>().TextFormat(m_Choice.text);
+            chatBoxManager.SendMessageToChat(/*username + ": " + */ m_Choice.text, Message.MessageType.playerMessage);
+
+            StartCoroutine(Coroutine2(choices));
+        }
     }
+
+    IEnumerator Coroutine2(List<GameObject> choices)
+    {
+        foreach (GameObject choice in choices)
+            if (choice.transform.childCount > 0)
+                choice.transform.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = "";
+
+        yield return new WaitForSeconds(waitForANewMessage);
+        foreach (GameObject choice in choices)
+            if (choice.transform.childCount > 0)
+                Destroy(choice.transform.GetChild(0).gameObject);
+        m_DialogueChannel.RaiseRequestDialogueNode(m_ChoiceNextNode);
+    }
+
 }

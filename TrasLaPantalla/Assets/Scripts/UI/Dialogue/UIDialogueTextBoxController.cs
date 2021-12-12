@@ -56,8 +56,7 @@ public class UIDialogueTextBoxController : MonoBehaviour, DialogueNodeVisitor
 
     public void NextSimpleNode()
     {
-        //if(m_NextNode.DialogueLine.)
-            m_DialogueChannel.RaiseRequestDialogueNode(m_NextNode);
+        m_DialogueChannel.RaiseRequestDialogueNode(m_NextNode);
     }
 
     private void OnDestroy()

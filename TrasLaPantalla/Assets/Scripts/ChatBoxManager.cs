@@ -122,7 +122,6 @@ public class ChatBoxManager : MonoBehaviour
     void Update()
     {
         playerNextMessage = nextMessage[indice];
-        Debug.Log(playerMessage);
         if (playerNextMessage != null && character < playerNextMessage.Length && Input.anyKeyDown && !(Input.GetMouseButtonDown(0)
            || Input.GetMouseButtonDown(1) || Input.GetMouseButtonDown(2)))
         {
@@ -203,9 +202,9 @@ public class ChatBoxManager : MonoBehaviour
 
     IEnumerator CoroutineNextMessage() 
     { 
-        //yield return new WaitForSecondsRealtime(waitForANewMessage);
+        yield return new WaitForSeconds(waitForANewMessage);
         ChatContactPanels[indice].transform.GetComponent<UIDialogueTextBoxController>().NextSimpleNode();
-        yield return null;
+        //yield return null;
     }
 
 
