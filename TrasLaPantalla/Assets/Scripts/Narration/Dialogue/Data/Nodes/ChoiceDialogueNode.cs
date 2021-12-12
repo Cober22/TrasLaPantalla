@@ -19,7 +19,10 @@ public class DialogueChoice
 public class ChoiceDialogueNode : DialogueNode
 {
     [SerializeField]
+    private bool activateMessage;
+    [SerializeField]
     private DialogueChoice[] m_Choices;
+
     public DialogueChoice[] Choices => m_Choices;
 
 

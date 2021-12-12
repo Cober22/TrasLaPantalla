@@ -11,10 +11,15 @@ public class NarrationLine : ScriptableObject
     private string m_playerAnswer;
     [SerializeField]
     private string m_scene;
+    [SerializeField]
+    private string nextChat;
+
 
     public NarrationCharacter Speaker => m_Speaker;
     public string Text => m_Text;
     public string PlayerText => m_playerAnswer;
     public string Scene => m_scene;
+    public string NextChat => nextChat;
+
 
 }

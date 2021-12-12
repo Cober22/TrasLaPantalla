@@ -18,7 +18,7 @@ public class DialogueSequencer
     public DialogueNodeCallback OnDialogueNodeEnd;
 
     private Dialogue m_CurrentDialogue;
-    private DialogueNode m_CurrentNode;
+    public DialogueNode m_CurrentNode;
 
     public void StartDialogue(Dialogue dialogue)
     {

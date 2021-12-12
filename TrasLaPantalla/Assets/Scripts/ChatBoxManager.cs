@@ -24,12 +24,14 @@ public class ChatBoxManager : MonoBehaviour
 
     [SerializeField]
     public static int indice = 0;
+
     public static int anterior = 1234;
     private bool thisChat;
     
     public List<string> nextMessage = new List<string>();
     public string playerNextMessage;
     public static string sceneName;
+    public static string nextChat;
 
     public int character;
     public float waitForANewMessage = 1f;
@@ -72,6 +74,7 @@ public class ChatBoxManager : MonoBehaviour
                 //------ INICIO DE LA CONVERSACION EN EL CHAT ------ //
                 if (!chatBox.GetComponent<UIDialogueTextBoxController>().chatInit)
                 {
+
                     chatBox.GetComponent<UIDialogueTextBoxController>().DoInteraction();
                     chatBox.GetComponent<UIDialogueTextBoxController>().chatInit = true;
                 }
@@ -98,11 +101,21 @@ public class ChatBoxManager : MonoBehaviour
 
     void Update()
     {
+        playerNextMessage = nextMessage[indice];
         if (playerNextMessage != null && character < playerNextMessage.Length && Input.anyKeyDown && !(Input.GetMouseButtonDown(0)
            || Input.GetMouseButtonDown(1) || Input.GetMouseButtonDown(2)))
         {
+            playerNextMessage = nextMessage[indice];
+
+            if(nextMessage[indice] == "" || nextMessage[indice] == null)
+                playerNextMessage = "";
+
             chatBoxInputs[indice].text += playerNextMessage[character];
+            chatBoxInputs[indice].transform.FindChild("Text").GetComponent<Text>().text = chatBoxInputs[indice].text;
             character += 1;
+            if (character >= 79) {
+                chatBoxInputs[indice].transform.FindChild("Text").GetComponent<Text>().alignment = TextAnchor.MiddleRight;
+            }
         }
         if (chatBoxInputs[indice].text != "")
         {
@@ -110,10 +123,22 @@ public class ChatBoxManager : MonoBehaviour
             {
                 character = 0;
                 SendMessageToChat(/*username + ": " + */playerNextMessage, Message.MessageType.playerMessage);
-                if (sceneName != "")
+                chatBoxInputs[indice].transform.FindChild("Text").GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
+                if (sceneName != "" && sceneName != null)
                 {
+                    Debug.Log(sceneName);
                     FindObjectOfType<DontDestroy>().GetComponent<Transform>().gameObject.SetActive(false);
                     SceneManager.LoadScene(sceneName);
+                }
+                if (nextChat != "")
+                {
+                    //GameObject.Find(nextChat).GetComponent<Image>().color = new Color(0.5f, 0.5f, 0.5f, 1f);
+                    GameObject.Find(nextChat).GetComponent<Button>().interactable = true;
+
+                    int aux = indice == 0 ? 1 : 0;
+                    GameObject.Find("Contactos").transform.GetChild(aux).GetComponent<Button>().interactable = false;
+
+                    nextChat = "";
                 }
                 chatBoxInputs[indice].text = "";
             }

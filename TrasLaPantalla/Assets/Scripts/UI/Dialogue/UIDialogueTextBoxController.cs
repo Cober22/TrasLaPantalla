@@ -41,7 +41,7 @@ public class UIDialogueTextBoxController : MonoBehaviour, DialogueNodeVisitor
             m_OnInteraction.Invoke();
     }
 
-    private DialogueNode m_NextNode = null;
+    public DialogueNode m_NextNode = null;
 
     private void Awake()
     {
@@ -56,7 +56,8 @@ public class UIDialogueTextBoxController : MonoBehaviour, DialogueNodeVisitor
 
     public void NextSimpleNode()
     {
-        m_DialogueChannel.RaiseRequestDialogueNode(m_NextNode);
+        //if(m_NextNode.DialogueLine.)
+            m_DialogueChannel.RaiseRequestDialogueNode(m_NextNode);
     }
 
     private void OnDestroy()
@@ -79,7 +80,7 @@ public class UIDialogueTextBoxController : MonoBehaviour, DialogueNodeVisitor
         newMessage.textObject.text = /*m_SpeakerText.name + ": " + */node.DialogueLine.Text;
         newMessage.textObject.text = TextFormat(newMessage.textObject.text);
         
-        Debug.Log(FindObjectOfType<ChatBoxManager>().GetComponent<ChatBoxManager>().nextMessage.Count);
+        //Debug.Log(FindObjectOfType<ChatBoxManager>().GetComponent<ChatBoxManager>().nextMessage.Count);
         switch (m_SpeakerText.name)
         {
             case "MadreChat":
@@ -87,12 +88,16 @@ public class UIDialogueTextBoxController : MonoBehaviour, DialogueNodeVisitor
                     FindObjectOfType<ChatBoxManager>().GetComponent<ChatBoxManager>().nextMessage[0] = TextFormat(node.DialogueLine.PlayerText);
                 if(node.DialogueLine.Scene != "")
                     ChatBoxManager.sceneName = node.DialogueLine.Scene;
+                if (node.DialogueLine.NextChat != null)
+                    ChatBoxManager.nextChat = node.DialogueLine.NextChat;
                 break;
             case "PadreChat":
                 if (node.DialogueLine.PlayerText != "")
                     FindObjectOfType<ChatBoxManager>().GetComponent<ChatBoxManager>().nextMessage[1] = TextFormat(node.DialogueLine.PlayerText);
                 if (node.DialogueLine.Scene != "")
                     ChatBoxManager.sceneName = node.DialogueLine.Scene;
+                if (node.DialogueLine.NextChat != null)
+                    ChatBoxManager.nextChat = node.DialogueLine.NextChat;
                 break;
         }
 
