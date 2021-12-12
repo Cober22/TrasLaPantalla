@@ -47,6 +47,8 @@ public class ChatBoxManager : MonoBehaviour
     public GameObject respuesta1;
     public GameObject respuesta2;
 
+    public int maxCharacter;
+
     private void Awake()
     {
         int i = 0;
@@ -80,6 +82,7 @@ public class ChatBoxManager : MonoBehaviour
             DontDestroy.hiddenChat = false;
             FindObjectOfType<DontDestroy>().GetComponent<Transform>().gameObject.SetActive(true);
         }
+
     }
 
     public void chooseContactIndex(GameObject chatBox)
@@ -121,6 +124,19 @@ public class ChatBoxManager : MonoBehaviour
 
     void Update()
     {
+        switch (SceneManager.GetActiveScene().name)
+        {
+            case "LETTERGRAM":
+                maxCharacter = 79;
+                break;
+            case "MAIWER":
+                maxCharacter = 58;
+                break;
+            case "WHOSAPP":
+                maxCharacter = 79;
+                break;
+        }
+
         playerNextMessage = nextMessage[indice];
         if (playerNextMessage != null && character < playerNextMessage.Length && Input.anyKeyDown && !(Input.GetMouseButtonDown(0)
            || Input.GetMouseButtonDown(1) || Input.GetMouseButtonDown(2)))
@@ -133,7 +149,7 @@ public class ChatBoxManager : MonoBehaviour
             chatBoxInputs[indice].text += playerNextMessage[character];
             chatBoxInputs[indice].transform.FindChild("Text").GetComponent<Text>().text = chatBoxInputs[indice].text;
             character += 1;
-            if (character >= 79) {
+            if (character >= maxCharacter) {
                 chatBoxInputs[indice].transform.FindChild("Text").GetComponent<Text>().alignment = TextAnchor.MiddleRight;
             }
         }
@@ -157,6 +173,7 @@ public class ChatBoxManager : MonoBehaviour
 
                     int aux = indice == 0 ? 1 : 0;
                     GameObject.Find("Contactos").transform.GetChild(aux).GetComponent<Button>().interactable = false;
+                    indice = aux;
 
                     nextChat = "";
                 }

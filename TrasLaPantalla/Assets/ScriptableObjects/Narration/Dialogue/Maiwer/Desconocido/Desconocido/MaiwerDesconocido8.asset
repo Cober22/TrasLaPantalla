@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 676f063305c2bae4a997b5004ec9d858, type: 3}
+  m_Name: MaiwerDesconocido8
+  m_EditorClassIdentifier: 
+  m_DialogueLine: {fileID: 11400000, guid: 1084e2be4eb891443aa7bffd3d1795ac, type: 2}
+  m_Choices:
+  - m_ChoicePreview: Sii, justo a dos calles, en la calle Ramiro Zamora
+    m_ChoiceNode: {fileID: 11400000, guid: 2484c96c5596fff4e9b7c9c7d05b587a, type: 2}
+  - m_ChoicePreview: "Ya estamos otra vez con las preguntas personales\u2026 \xBFqu\xE9
+      m\xE1s da donde vivo exactamente?"
+    m_ChoiceNode: {fileID: 11400000, guid: 604783fc1b813194580dde29eaf696cd, type: 2}

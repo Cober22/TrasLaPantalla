@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbd2c1887a808da4b8f0a6cec8d8b890, type: 3}
+  m_Name: N_MaiwerDesconocido10
+  m_EditorClassIdentifier: 
+  m_Speaker: {fileID: 11400000, guid: 0df4600c98a6b494aae5d51fc2c8614a, type: 2}
+  m_Text: "Qu\xE9 te parece si me das tu tel\xE9fono y hablamos por ah\xED mejor?
+    Ya que has dicho que conf\xEDas en m\xED, as\xED es m\xE1s c\xF3modo que hablar
+    por aqu\xED o por Twitter"
+  m_playerAnswer: "Bueno venga vale, para que veas que conf\xEDo en ti de verdad.
+    658974125"
+  m_scene: 
+  nextChat: 
