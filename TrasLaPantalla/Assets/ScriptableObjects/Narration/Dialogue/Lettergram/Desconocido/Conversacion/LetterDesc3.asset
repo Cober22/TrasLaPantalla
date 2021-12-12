@@ -12,7 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abaa1d01ebe65f6469c9f7f9cd89f2dc, type: 3}
   m_Name: LetterDesc3
   m_EditorClassIdentifier: 
-  m_DialogueLine: {fileID: 11400000, guid: f76aa2aa8595ed14f91c64d5f33c4b71, type: 2}
-  m_NextNode: {fileID: 0}
-  activateMessage: 0
-  messageToActivate: {fileID: 0}
+  m_DialogueLine: {fileID: 11400000, guid: 272b02cb430a08a4ba013d9b96a883c1, type: 2}
+  m_NextNode: {fileID: 11400000, guid: 8bd00aaed61450b418168adba0cb08fd, type: 2}

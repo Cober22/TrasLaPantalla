@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: N_LetterDesc3
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: 0df4600c98a6b494aae5d51fc2c8614a, type: 2}
-  m_Text: Pues vale crack
-  m_playerAnswer: pues ya ves hermano
+  m_Text: Me alegro de concerte!!
+  m_playerAnswer: 
   m_scene: 
   nextChat: Amigo

@@ -344,7 +344,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 238813879}
   m_OnClick:
     m_PersistentCalls:
@@ -1440,7 +1440,7 @@ PrefabInstance:
     - target: {fileID: -3295141226617726669, guid: 9182d879243c8d746a71e684f8820a8a, type: 3}
       propertyPath: m_DialogueChannel
       value: 
-      objectReference: {fileID: 11400000, guid: 90729090a61273340a106d58df1c4f9d, type: 2}
+      objectReference: {fileID: 11400000, guid: 714130ffee6dee8408a91688c51b532e, type: 2}
     - target: {fileID: 3365769474238233696, guid: 9182d879243c8d746a71e684f8820a8a, type: 3}
       propertyPath: m_Color.a
       value: 1
@@ -1768,16 +1768,16 @@ MonoBehaviour:
   chatBox: {fileID: 1834904767}
   m_ChoicesBoxTransform: {fileID: 1684603795}
   m_ChoiceControllerPrefab: {fileID: 756504933}
-  m_DialogueChannel: {fileID: 11400000, guid: 2f75209ec06cd3646997d9576ed56e28, type: 2}
+  m_DialogueChannel: {fileID: 11400000, guid: f0c0aa62c7e9c0d43822dc4641b6e17b, type: 2}
   m_OnInteraction:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 2f75209ec06cd3646997d9576ed56e28, type: 2}
+      - m_Target: {fileID: 11400000, guid: f0c0aa62c7e9c0d43822dc4641b6e17b, type: 2}
         m_TargetAssemblyTypeName: DialogueChannel, Assembly-CSharp
         m_MethodName: RaiseRequestDialogue
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: ead3cb605ffc18f4b8821fb56d38f8b1, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: 97324a12d5b2cd846a1950860f3ad1be, type: 2}
           m_ObjectArgumentAssemblyTypeName: Dialogue, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -2111,6 +2111,7 @@ MonoBehaviour:
   waitForANewMessage: 1
   respuesta1: {fileID: 0}
   respuesta2: {fileID: 0}
+  maxCharacter: 0
 --- !u!114 &918197094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2123,7 +2124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c07d05f2c613e434ebff6b126811065c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_DialogueChannel: {fileID: 11400000, guid: 90729090a61273340a106d58df1c4f9d, type: 2}
+  m_DialogueChannel: {fileID: 11400000, guid: f0c0aa62c7e9c0d43822dc4641b6e17b, type: 2}
 --- !u!114 &918197095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2136,7 +2137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c07d05f2c613e434ebff6b126811065c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_DialogueChannel: {fileID: 11400000, guid: 2f75209ec06cd3646997d9576ed56e28, type: 2}
+  m_DialogueChannel: {fileID: 11400000, guid: 714130ffee6dee8408a91688c51b532e, type: 2}
 --- !u!4 &918197096
 Transform:
   m_ObjectHideFlags: 0
@@ -2202,16 +2203,16 @@ MonoBehaviour:
   chatBox: {fileID: 1135539778}
   m_ChoicesBoxTransform: {fileID: 1684603795}
   m_ChoiceControllerPrefab: {fileID: 756504933}
-  m_DialogueChannel: {fileID: 11400000, guid: 90729090a61273340a106d58df1c4f9d, type: 2}
+  m_DialogueChannel: {fileID: 11400000, guid: 714130ffee6dee8408a91688c51b532e, type: 2}
   m_OnInteraction:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 90729090a61273340a106d58df1c4f9d, type: 2}
+      - m_Target: {fileID: 11400000, guid: 714130ffee6dee8408a91688c51b532e, type: 2}
         m_TargetAssemblyTypeName: DialogueChannel, Assembly-CSharp
         m_MethodName: RaiseRequestDialogue
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 5cd5b55c41c6cde4cb19400e705aca74, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: a5c2535dbe134254b9dba60dfdc563c0, type: 2}
           m_ObjectArgumentAssemblyTypeName: Dialogue, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0

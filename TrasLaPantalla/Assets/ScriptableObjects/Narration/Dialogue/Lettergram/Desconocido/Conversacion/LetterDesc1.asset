@@ -12,12 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 676f063305c2bae4a997b5004ec9d858, type: 3}
   m_Name: LetterDesc1
   m_EditorClassIdentifier: 
-  m_DialogueLine: {fileID: 11400000, guid: 315b2fec0ad786f4c8b7394772ed8443, type: 2}
-  activateMessage: 1
+  m_DialogueLine: {fileID: 11400000, guid: bc9f6e627b7fe3641af56907bfc6221a, type: 2}
   m_Choices:
   - m_ChoicePreview: "Hey, \xBFqui\xE9n eres?"
-    m_ChoiceNode: {fileID: 11400000, guid: d4558d3883cf4474fbfffbf733e462a9, type: 2}
-    messageToActivate: {fileID: 0}
+    m_ChoiceNode: {fileID: 11400000, guid: b48bedea501f903438df7f12bc28df03, type: 2}
   - m_ChoicePreview: "\xA1Hola! Mi anime favorito es Attack on Titan"
-    m_ChoiceNode: {fileID: 11400000, guid: d4558d3883cf4474fbfffbf733e462a9, type: 2}
-    messageToActivate: {fileID: 0}
+    m_ChoiceNode: {fileID: 11400000, guid: b48bedea501f903438df7f12bc28df03, type: 2}
