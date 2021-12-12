@@ -14,5 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Speaker: {fileID: 11400000, guid: 5dd660c6bb3238846a6310ef47c21b13, type: 2}
   m_Text: "Hey, \xBFque haces?"
-  m_playerAnswer: dadsda
+  m_playerAnswer: "Hola, pues mira justo iba a hablarte pero me ha hablado una chavala
+    que no conozco y me ha preguntado que cual era mi anime favorito, un poco extra\xF1o
+    pero bueno"
   m_scene: 
+  nextChat: 

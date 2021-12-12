@@ -42,7 +42,6 @@ public class UIDialogueChoiceController : MonoBehaviour
             c++;
         }
         //username = chatBoxManager.username;
-
         if(m_Choice.text != "")
         {
             m_Choice.text = FindObjectOfType<UIDialogueTextBoxController>().TextFormat(m_Choice.text);

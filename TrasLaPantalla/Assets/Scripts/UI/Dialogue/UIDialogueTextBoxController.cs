@@ -12,7 +12,7 @@ public class UIDialogueTextBoxController : MonoBehaviour, DialogueNodeVisitor
     [SerializeField]
     private GameObject textObject;
     [SerializeField]
-    private GameObject chatPanel;
+    private List<GameObject> chatPanel = new List<GameObject>();
     [SerializeField]
     private InputField chatBox;
 
@@ -70,28 +70,33 @@ public class UIDialogueTextBoxController : MonoBehaviour, DialogueNodeVisitor
     {
         //...... MENSAJES CONTACTO ......//
         Message newMessage = new Message();
-        
-        GameObject newText = Instantiate(textObject, chatPanel.transform);
-        RectTransform pos = newText.GetComponent<RectTransform>();
-        newText.GetComponent<RectTransform>().rect.Set(-380f, pos.rect.y, pos.rect.width, pos.rect.height);
+        Message newMessage2 = new Message();
+
+        GameObject newText = Instantiate(textObject, chatPanel[0].transform);
+        GameObject newText2 = Instantiate(textObject, chatPanel[1].transform);
+        //RectTransform pos = newText.GetComponent<RectTransform>();
+        //newText.GetComponent<RectTransform>().rect.Set(-380f, pos.rect.y, pos.rect.width, pos.rect.height);
         
         newMessage.textObject = newText.GetComponentInChildren<Text>();
+        newMessage2.textObject = newText2.GetComponentInChildren<Text>();
 
         newMessage.textObject.text = /*m_SpeakerText.name + ": " + */node.DialogueLine.Text;
         newMessage.textObject.text = TextFormat(newMessage.textObject.text);
-        
+        newMessage2.textObject.text = /*m_SpeakerText.name + ": " + */node.DialogueLine.Text;
+        newMessage2.textObject.text = TextFormat(newMessage2.textObject.text);
+
         //Debug.Log(FindObjectOfType<ChatBoxManager>().GetComponent<ChatBoxManager>().nextMessage.Count);
         switch (m_SpeakerText.name)
         {
-            case "MadreChat":
+            case "MadreChat (1)":
                 if(node.DialogueLine.PlayerText != "")
                     FindObjectOfType<ChatBoxManager>().GetComponent<ChatBoxManager>().nextMessage[0] = TextFormat(node.DialogueLine.PlayerText);
-                if(node.DialogueLine.Scene != "")
+                if (node.DialogueLine.Scene != "")
                     ChatBoxManager.sceneName = node.DialogueLine.Scene;
                 if (node.DialogueLine.NextChat != null)
                     ChatBoxManager.nextChat = node.DialogueLine.NextChat;
                 break;
-            case "PadreChat":
+            case "PadreChat (1)":
                 if (node.DialogueLine.PlayerText != "")
                     FindObjectOfType<ChatBoxManager>().GetComponent<ChatBoxManager>().nextMessage[1] = TextFormat(node.DialogueLine.PlayerText);
                 if (node.DialogueLine.Scene != "")
@@ -107,14 +112,21 @@ public class UIDialogueTextBoxController : MonoBehaviour, DialogueNodeVisitor
         {
             case "ChatPanelPadre":
                 newMessage.textObject.color = GameObject.FindObjectOfType<ChatBoxManager>().MessageTypeColor(Message.MessageType.contact1);
+                newMessage2.textObject.color = GameObject.FindObjectOfType<ChatBoxManager>().MessageTypeColor(Message.MessageType.contact1);
                 break;
-            case "ChatPanelMadre":
+            case "ChatPanelMadre":  
                 newMessage.textObject.color = GameObject.FindObjectOfType<ChatBoxManager>().MessageTypeColor(Message.MessageType.contact2);
+                newMessage2.textObject.color = GameObject.FindObjectOfType<ChatBoxManager>().MessageTypeColor(Message.MessageType.contact2);
                 break;
             default:
                 newMessage.textObject.color = Color.black;
+                newMessage2.textObject.color = Color.black;
                 break;
         }
+
+        newMessage2.textObject.color = new Color(0f, 0f, 0f, 0f);
+        newText2.GetComponentInChildren<Image>().color = new Color(0f, 0f, 0f, 0f);
+        ChatBoxManager.character = 0;
 
         node.Accept(this);
     }

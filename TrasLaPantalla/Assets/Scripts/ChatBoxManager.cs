@@ -12,7 +12,15 @@ public class ChatBoxManager : MonoBehaviour
     public int maxMessages = 15;
 
     [SerializeField]
-    public GameObject[] chatPanel;
+    public GameObject[] chatPanel1;
+    [SerializeField]
+    public GameObject[] chatPanel2;
+
+
+    public List<List<GameObject>> chatPanel = new List<List<GameObject>>();
+    //public List<GameObject>[] chatPanel = new List<GameObject>[2];
+
+    //public GameObject[] chatPanel;
     public GameObject textObjectContacts;
     public GameObject textObjectPlayer;
     public InputField[] chatBoxInputs;
@@ -33,7 +41,7 @@ public class ChatBoxManager : MonoBehaviour
     public static string sceneName;
     public static string nextChat;
 
-    public int character;
+    public static int character;
     public float waitForANewMessage = 1f;
 
     public GameObject respuesta1;
@@ -42,10 +50,22 @@ public class ChatBoxManager : MonoBehaviour
     private void Awake()
     {
         int i = 0;
-        while (i < 4) {
+        while (i < 4)
+        {
             nextMessage.Add("");
             i += 1;
         }
+
+        List<GameObject> aux1 = new List<GameObject>();
+        aux1.Add(chatPanel1[0]);
+        aux1.Add(chatPanel1[1]);
+
+        List<GameObject> aux2 = new List<GameObject>();
+        aux2.Add(chatPanel2[0]);
+        aux2.Add(chatPanel2[1]);
+
+        chatPanel.Add(aux1);
+        chatPanel.Add(aux2);
 
         if (respuesta1 == null)
         {
@@ -102,6 +122,7 @@ public class ChatBoxManager : MonoBehaviour
     void Update()
     {
         playerNextMessage = nextMessage[indice];
+        Debug.Log(playerMessage);
         if (playerNextMessage != null && character < playerNextMessage.Length && Input.anyKeyDown && !(Input.GetMouseButtonDown(0)
            || Input.GetMouseButtonDown(1) || Input.GetMouseButtonDown(2)))
         {
@@ -119,7 +140,7 @@ public class ChatBoxManager : MonoBehaviour
         }
         if (chatBoxInputs[indice].text != "")
         {
-            if (Input.GetKeyDown(KeyCode.Return) && character  >= playerNextMessage.Length)
+            if (Input.GetKeyDown(KeyCode.Return) && character >= playerNextMessage.Length)
             {
                 character = 0;
                 SendMessageToChat(/*username + ": " + */playerNextMessage, Message.MessageType.playerMessage);
@@ -161,15 +182,23 @@ public class ChatBoxManager : MonoBehaviour
     {
         Message newMessage = new Message();  
         newMessage.text = text;
+        Message newMessage2 = new Message();
+        newMessage2.text = text;
 
-        GameObject newText = Instantiate(textObjectPlayer, chatPanel[indice].transform);
+        GameObject newText = Instantiate(textObjectPlayer, chatPanel[indice][0].transform);
+        GameObject newText2 = Instantiate(textObjectPlayer, chatPanel[indice][1].transform);
 
         newMessage.textObject = newText.GetComponentInChildren<Text>();
+        newMessage2.textObject = newText2.GetComponentInChildren<Text>();
         newMessage.textObject.text = newMessage.text;
+        newMessage2.textObject.text = newMessage2.text;
         newMessage.textObject.color = MessageTypeColor(messageType);
 
-        StartCoroutine(CoroutineNextMessage());
+        newMessage.textObject.color = new Color(0f, 0f, 0f, 0f);
+        newText.GetComponentInChildren<Image>().color = new Color(0f, 0f, 0f, 0f);
+        character = 0;
 
+        StartCoroutine(CoroutineNextMessage());
     }
 
     IEnumerator CoroutineNextMessage() 

@@ -233,8 +233,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   username: Jorge
   maxMessages: 15
-  chatPanel:
+  chatPanel1:
+  - {fileID: 1711742962}
   - {fileID: 1788511810}
+  chatPanel2:
+  - {fileID: 980364883}
   - {fileID: 59086993}
   textObjectContacts: {fileID: 8945208024115798441, guid: af59b44c74624864b8e30b2b61ec8922, type: 3}
   textObjectPlayer: {fileID: 8945208024115798441, guid: d842c5bc268f50645871abd6546015b7, type: 3}
@@ -251,6 +254,8 @@ MonoBehaviour:
   playerNextMessage: 
   character: 0
   waitForANewMessage: 1
+  respuesta1: {fileID: 0}
+  respuesta2: {fileID: 0}
 --- !u!114 &270039284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -400,7 +405,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SpeakerText: {fileID: 980364883}
   textObject: {fileID: 8945208024115798441, guid: af59b44c74624864b8e30b2b61ec8922, type: 3}
-  chatPanel: {fileID: 980364883}
+  chatPanel:
+  - {fileID: 980364883}
+  - {fileID: 59086993}
   chatBox: {fileID: 712783542}
   m_ChoicesBoxTransform: {fileID: 1667832561}
   m_ChoiceControllerPrefab: {fileID: 684523993}
@@ -422,6 +429,7 @@ MonoBehaviour:
         m_CallState: 2
   maxCharactersPerLine: 20
   chatInit: 0
+  m_NextNode: {fileID: 0}
 --- !u!114 &327499871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2118,7 +2126,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SpeakerText: {fileID: 1711742962}
   textObject: {fileID: 8945208024115798441, guid: af59b44c74624864b8e30b2b61ec8922, type: 3}
-  chatPanel: {fileID: 1711742962}
+  chatPanel:
+  - {fileID: 1711742962}
+  - {fileID: 1788511810}
   chatBox: {fileID: 1565456568}
   m_ChoicesBoxTransform: {fileID: 1667832561}
   m_ChoiceControllerPrefab: {fileID: 684523993}
@@ -2140,6 +2150,7 @@ MonoBehaviour:
         m_CallState: 2
   maxCharactersPerLine: 20
   chatInit: 0
+  m_NextNode: {fileID: 0}
 --- !u!114 &1218970047
 MonoBehaviour:
   m_ObjectHideFlags: 0

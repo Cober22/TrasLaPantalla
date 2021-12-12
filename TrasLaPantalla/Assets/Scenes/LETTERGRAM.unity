@@ -244,7 +244,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 6
-  m_Spacing: 40
+  m_Spacing: 15
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
@@ -1276,9 +1276,9 @@ MonoBehaviour:
     m_Left: 0
     m_Right: 40
     m_Top: 0
-    m_Bottom: 40
+    m_Bottom: 0
   m_ChildAlignment: 8
-  m_Spacing: 80
+  m_Spacing: 15
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
@@ -1760,9 +1760,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a44994c84abd2449bc426540d2566d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SpeakerText: {fileID: 137265481}
+  m_SpeakerText: {fileID: 1273467130}
   textObject: {fileID: 8945208024115798441, guid: af59b44c74624864b8e30b2b61ec8922, type: 3}
-  chatPanel: {fileID: 137265481}
+  chatPanel:
+  - {fileID: 137265481}
+  - {fileID: 1273467130}
   chatBox: {fileID: 1834904767}
   m_ChoicesBoxTransform: {fileID: 1684603795}
   m_ChoiceControllerPrefab: {fileID: 756504933}
@@ -1782,7 +1784,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  maxCharactersPerLine: 20
+  maxCharactersPerLine: 45
   chatInit: 0
   m_NextNode: {fileID: 0}
 --- !u!114 &836412414
@@ -2087,8 +2089,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   username: Jorge
   maxMessages: 15
-  chatPanel:
+  chatPanel1:
+  - {fileID: 1958396336}
   - {fileID: 606703606}
+  chatPanel2:
+  - {fileID: 137265481}
   - {fileID: 1273467130}
   textObjectContacts: {fileID: 8945208024115798441, guid: af59b44c74624864b8e30b2b61ec8922, type: 3}
   textObjectPlayer: {fileID: 8945208024115798441, guid: d842c5bc268f50645871abd6546015b7, type: 3}
@@ -2190,9 +2195,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a44994c84abd2449bc426540d2566d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SpeakerText: {fileID: 1958396336}
+  m_SpeakerText: {fileID: 606703606}
   textObject: {fileID: 8945208024115798441, guid: af59b44c74624864b8e30b2b61ec8922, type: 3}
-  chatPanel: {fileID: 1958396336}
+  chatPanel:
+  - {fileID: 1958396336}
+  - {fileID: 606703606}
   chatBox: {fileID: 1135539778}
   m_ChoicesBoxTransform: {fileID: 1684603795}
   m_ChoiceControllerPrefab: {fileID: 756504933}
@@ -2212,7 +2219,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  maxCharactersPerLine: 15
+  maxCharactersPerLine: 45
   chatInit: 0
   m_NextNode: {fileID: 0}
 --- !u!114 &1027017332
@@ -2938,9 +2945,9 @@ MonoBehaviour:
     m_Left: 0
     m_Right: 40
     m_Top: 0
-    m_Bottom: 40
+    m_Bottom: 0
   m_ChildAlignment: 8
-  m_Spacing: 80
+  m_Spacing: 15
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
@@ -4245,7 +4252,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 6
-  m_Spacing: 40
+  m_Spacing: 15
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
