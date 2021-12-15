@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 676f063305c2bae4a997b5004ec9d858, type: 3}
+  m_Name: WhosDesc2 3
+  m_EditorClassIdentifier: 
+  m_DialogueLine: {fileID: 11400000, guid: 2666473ff93f87942bf2386aa5c2bc23, type: 2}
+  m_Choices:
+  - m_ChoicePreview: "Sara ya est\xE1 bien, no te voy a dar ninguna tarjeta, y llevas
+      oliendo mal desde el principio, creo que lo mejor es que dejemos de hablar,
+      ya no me siento c\xF3modo charlando contigo"
+    m_ChoiceNode: {fileID: 0}
+  - m_ChoicePreview: Venga vale pero ve con mucho cuidado que son datos muy muy importantes
+    m_ChoiceNode: {fileID: 11400000, guid: 4ffb3b638eddeb14997cc56304588cc1, type: 2}

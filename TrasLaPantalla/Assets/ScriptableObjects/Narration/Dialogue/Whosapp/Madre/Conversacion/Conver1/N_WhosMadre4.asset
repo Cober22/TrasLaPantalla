@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbd2c1887a808da4b8f0a6cec8d8b890, type: 3}
+  m_Name: N_WhosMadre4
+  m_EditorClassIdentifier: 
+  m_Speaker: {fileID: 11400000, guid: 2b65e176fcc166e40abf7f7fa88fff59, type: 2}
+  m_Text: "No se hijo, a mi me da igual con quien te relaciones (dentro de unos l\xEDmites
+    normales), pero tienes que tener en cuenta que no todo el mundo tiene buenas
+    intenciones igual que tu en este mundo"
+  m_playerAnswer: "Vale mam\xE1 ya lo s\xE9, ir\xE9 con mucho cuidado"
+  m_scene: 
+  nextChat: 
